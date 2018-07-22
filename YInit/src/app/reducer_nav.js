@@ -5,10 +5,19 @@ import { NavigationActions } from 'react-navigation';
 
 import { RootNavigator } from 'src/route/AppNavigator';
 
+//demo counter
+//demo api_login
+const demo_counter_login = 'CounterContainer';
+
+
+//demo react-navigation
+const demo_react_navigation = 'Login';
+
+
 // Start with two routes: The Main screen, with the Login screen on top.
 const firstAction = RootNavigator.router.getActionForPathAndParams('Main');
 const tempNavState = RootNavigator.router.getStateForAction(firstAction);
-const secondAction = RootNavigator.router.getActionForPathAndParams('CounterContainer');
+const secondAction = RootNavigator.router.getActionForPathAndParams(demo_react_navigation);
 const initialNavState = RootNavigator.router.getStateForAction(
     secondAction,
     tempNavState
