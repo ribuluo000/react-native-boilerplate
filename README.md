@@ -33,3 +33,15 @@ Temporarily you can
 
 ```
 
+
+Can't find variable: Reflect
+
+解决方案：
+https://github.com/feathersjs/socketio/issues/31
+
+```
+Try installing babel-polyfill and then in your main application file adding
+
+if(!global._babelPolyfill) { require('babel-polyfill'); }
+
+```
