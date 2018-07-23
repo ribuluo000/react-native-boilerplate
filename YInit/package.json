@@ -22,7 +22,7 @@
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0",
     "redux-thunk": "^2.3.0",
-    "remote-redux-devtools": "^0.5.12",
+    "remote-redux-devtools-sp": "^0.5.13",
     "reselect": "^3.0.1",
     "whatwg-fetch": "^2.0.4"
   },

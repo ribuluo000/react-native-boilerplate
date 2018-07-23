@@ -3,7 +3,7 @@
  */
 import { createStore, applyMiddleware, compose } from 'redux';
 import { fromJS } from 'immutable';
-import { composeWithDevTools } from "remote-redux-devtools";
+import { composeWithDevTools } from "remote-redux-devtools-sp";
 import thunk from "redux-thunk";
 import createSagaMiddleware from 'redux-saga';
 import createReducer from './reducer';
