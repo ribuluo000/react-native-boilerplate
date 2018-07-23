@@ -4,7 +4,7 @@
 import React, { PureComponent } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-import CounterScreen from "demo/component/CounterScreen";
+import CounterPage from "demo/page/counter/CounterPage";
 import { connect } from "react-redux"; // 引入connect函数
 import { bindActionCreators, compose } from "redux";
 import TYPE_KEY from "src/constant/TYPE_KEY";
@@ -29,8 +29,8 @@ class CounterContainer extends PureComponent {
         const { count, increment, decrement, onPress_login } = this.props;
         return (
             <View style={styles.container}>
-                <CounterScreen incrementFn={increment} decrementFn={decrement} counter={count}>
-                </CounterScreen>
+                <CounterPage incrementFn={increment} decrementFn={decrement} counter={count}>
+                </CounterPage>
                 <TouchableOpacity onPress={onPress_login} style={{ marginTop : 50 }}>
                     <View>
                         <Text>登录
