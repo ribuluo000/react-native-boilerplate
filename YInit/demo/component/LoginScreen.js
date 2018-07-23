@@ -4,6 +4,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, StyleSheet, Text, View } from 'react-native';
+import TYPE_ACTION from 'src/constant/TYPE_ACTION';
 
 const styles = StyleSheet.create({
     container: {
@@ -28,7 +29,7 @@ const LoginScreen = ({ navigation }) => (
             This is great
         </Text>
         <Button
-            onPress={() => navigation.dispatch({ type: 'Login' })}
+            onPress={() => navigation.dispatch({ type: TYPE_ACTION.LoginScreen })}
             title="Log in"
         />
     </View>

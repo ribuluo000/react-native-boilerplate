@@ -4,20 +4,22 @@
 import { NavigationActions } from 'react-navigation';
 
 import { RootNavigator } from 'src/route/AppNavigator';
+import TYPE_ACTION from 'src/constant/TYPE_ACTION';
 
 //demo counter
 //demo api_login
-const demo_counter_login = 'CounterContainer';
+const demo_counter_login = TYPE_ACTION.CounterContainer;
 
 
 //demo react-navigation
-const demo_react_navigation = 'Login';
+const demo_react_navigation = TYPE_ACTION.LoginScreen;
+const demo_main = TYPE_ACTION.MainScreen;
 
 
 // Start with two routes: The Main screen, with the Login screen on top.
-const firstAction = RootNavigator.router.getActionForPathAndParams('Main');
+const firstAction = RootNavigator.router.getActionForPathAndParams(demo_main);
 const tempNavState = RootNavigator.router.getStateForAction(firstAction);
-const secondAction = RootNavigator.router.getActionForPathAndParams(demo_react_navigation);
+const secondAction = RootNavigator.router.getActionForPathAndParams(demo_main);
 const initialNavState = RootNavigator.router.getStateForAction(
     secondAction,
     tempNavState
@@ -26,7 +28,7 @@ const initialNavState = RootNavigator.router.getStateForAction(
 function reducer_nav(state = initialNavState, action) {
     let nextState;
     switch (action.type) {
-        case 'Login':
+        case TYPE_ACTION.LoginScreen:
             nextState = RootNavigator.router.getStateForAction(
                 NavigationActions.back(),
                 state
@@ -35,6 +37,15 @@ function reducer_nav(state = initialNavState, action) {
         case 'Logout':
             nextState = RootNavigator.router.getStateForAction(
                 NavigationActions.navigate({ routeName: 'Login' }),
+                state
+            );
+            break;
+
+        case TYPE_ACTION.ProfileScreen:
+        case TYPE_ACTION.MainScreen:
+        case TYPE_ACTION.StorageScreen:
+            nextState = RootNavigator.router.getStateForAction(
+                NavigationActions.navigate({ routeName: action.type }),
                 state
             );
             break;

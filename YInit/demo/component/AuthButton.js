@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import { Button } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import TYPE_KEY from 'src/constant/TYPE_KEY';
+import TYPE_ACTION from 'src/constant/TYPE_ACTION';
 
 const AuthButton = ({ logout, loginScreen, is_logged_in }) => (
     <Button
@@ -28,7 +29,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
     logout: () => dispatch({ type: 'Logout' }),
     loginScreen: () =>
-        dispatch(NavigationActions.navigate({ routeName: 'Login' })),
+        dispatch(NavigationActions.navigate({ routeName: TYPE_ACTION.LoginScreen })),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(AuthButton);

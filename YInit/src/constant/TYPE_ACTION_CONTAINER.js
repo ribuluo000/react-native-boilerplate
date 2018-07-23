@@ -7,4 +7,9 @@
  */
 export default {
     "CONTAINER" : "CONTAINER",
+    "ProfileScreen" : "ProfileScreen",
+    "LoginScreen" : "LoginScreen",
+    "MainScreen" : "MainScreen",
+    "StorageScreen" : "StorageScreen",
+
 };
