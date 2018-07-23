@@ -11,6 +11,10 @@ yarn add prop-types
 
 yarn add invariant hoist-non-react-statics lodash whatwg-fetch
 
+yarn add remote-redux-devtools-sp
+yarn add babel-polyfill
+yarn add moment
+
 
 
 note:
