@@ -148,6 +148,126 @@ const commonStyles = StyleSheet.create({
     btnSizeXS : {height:BASE.btnSize.XS,padding:2},
     btnSizeXXS : {height:BASE.btnSize.XXS,padding:2},
 
+    //间距大小
+    marginHSizeXXL : {marginLeft:BASE.marginSize.XXL,marginRight:BASE.marginSize.XXL,},
+    marginHSizeXL : {marginLeft:BASE.marginSize.XL,marginRight:BASE.marginSize.XL,},
+    marginHSizeL : {marginLeft:BASE.marginSize.L,marginRight:BASE.marginSize.L,},
+    marginHSzeM : {marginLeft:BASE.marginSize.M,marginRight:BASE.marginSize.M,},
+    marginHSizeS : {marginLeft:BASE.marginSize.S,marginRight:BASE.marginSize.S,},
+    marginHSizeXS : {marginLeft:BASE.marginSize.XS,marginRight:BASE.marginSize.XS,},
+    marginHSizeXXS : {marginLeft:BASE.marginSize.XS,marginRight:BASE.marginSize.XXS,},
+
+    marginVSizeXXL : {marginTop:BASE.marginSize.XXL,marginBottom:BASE.marginSize.XXL,},
+    marginVSizeXL : {marginTop:BASE.marginSize.XL,marginBottom:BASE.marginSize.XL,},
+    marginVSizeL : {marginTop:BASE.marginSize.L,marginBottom:BASE.marginSize.L,},
+    marginHSizeM : {marginTop:BASE.marginSize.M,marginBottom:BASE.marginSize.M,},
+    marginVSizeS : {marginTop:BASE.marginSize.S,marginBottom:BASE.marginSize.S,},
+    marginVSizeXS : {marginTop:BASE.marginSize.XS,marginBottom:BASE.marginSize.XS,},
+    marginVSizeXXS : {marginTop:BASE.marginSize.XS,marginBottom:BASE.marginSize.XXS,},
+
+
+    marginTopSizeXXL : {marginTop:BASE.marginSize.XXL,},
+    marginTopSizeXL : {marginTop:BASE.marginSize.XL,},
+    marginTopSizeL : {marginTop:BASE.marginSize.L,},
+    marginTopSizeM : {marginTop:BASE.marginSize.M,},
+    marginTopSizeS : {marginTop:BASE.marginSize.S,},
+    marginTopSizeXS : {marginTop:BASE.marginSize.XS,},
+    marginTopSizeXXS : {marginTop:BASE.marginSize.XXS,},
+
+    marginBottomSizeXXL : {marginBottom:BASE.marginSize.XXL,},
+    marginBottomSizeXL : {marginBottom:BASE.marginSize.XL,},
+    marginBottomSizeL : {marginBottom:BASE.marginSize.L,},
+    marginBottomSizeM : {marginBottom:BASE.marginSize.M,},
+    marginBottomSizeS : {marginBottom:BASE.marginSize.S,},
+    marginBottomSizeXS : {marginBottom:BASE.marginSize.XS,},
+    marginBottomSizeXXS : {marginBottom:BASE.marginSize.XXS,},
+
+    marginLeftSizeXXL : {marginLeft:BASE.marginSize.XXL,},
+    marginLeftSizeXL : {marginLeft:BASE.marginSize.XL,},
+    marginLeftSizeL : {marginLeft:BASE.marginSize.L,},
+    marginLeftSizeM : {marginLeft:BASE.marginSize.M,},
+    marginLeftSizeS : {marginLeft:BASE.marginSize.S,},
+    marginLeftSizeXS : {marginLeft:BASE.marginSize.XS,},
+    marginLeftSizeXXS : {marginLeft:BASE.marginSize.XXS,},
+
+    marginRightSizeXXL : {marginRight:BASE.marginSize.XXL,},
+    marginRightSizeXL : {marginRight:BASE.marginSize.XL,},
+    marginRightSizeL : {marginRight:BASE.marginSize.L,},
+    marginRightSizeM : {marginRight:BASE.marginSize.M,},
+    marginRightSizeS : {marginRight:BASE.marginSize.S,},
+    marginRightSizeXS : {marginRight:BASE.marginSize.XS,},
+    marginRightSizeXXS : {marginRight:BASE.marginSize.XXS,},
+
+
+    marginSizeXXL : {margin:BASE.marginSize.XXL,},
+    marginSizeXL : {margin:BASE.marginSize.XL,},
+    marginSizeL : {margin:BASE.marginSize.L,},
+    marginSizeM : {margin:BASE.marginSize.M,},
+    marginSizeS : {margin:BASE.marginSize.S,},
+    marginSizeXS : {margin:BASE.marginSize.XS,},
+    marginSizeXXS : {margin:BASE.marginSize.XXS,},
+
+    //间距大小
+
+    paddingHSizeXXL : {paddingLeft:BASE.paddingSize.XXL,paddingRight:BASE.paddingSize.XXL,},
+    paddingHSizeXL : {paddingLeft:BASE.paddingSize.XL,paddingRight:BASE.paddingSize.XL,},
+    paddingHSizeL : {paddingLeft:BASE.paddingSize.L,paddingRight:BASE.paddingSize.L,},
+    paddingHSzeM : {paddingLeft:BASE.paddingSize.M,paddingRight:BASE.paddingSize.M,},
+    paddingHSizeS : {paddingLeft:BASE.paddingSize.S,paddingRight:BASE.paddingSize.S,},
+    paddingHSizeXS : {paddingLeft:BASE.paddingSize.XS,paddingRight:BASE.paddingSize.XS,},
+    paddingHSizeXXS : {paddingLeft:BASE.paddingSize.XS,paddingRight:BASE.paddingSize.XXS,},
+
+    paddingVSizeXXL : {paddingTop:BASE.paddingSize.XXL,paddingBottom:BASE.paddingSize.XXL,},
+    paddingVSizeXL : {paddingTop:BASE.paddingSize.XL,paddingBottom:BASE.paddingSize.XL,},
+    paddingVSizeL : {paddingTop:BASE.paddingSize.L,paddingBottom:BASE.paddingSize.L,},
+    paddingHSizeM : {paddingTop:BASE.paddingSize.M,paddingBottom:BASE.paddingSize.M,},
+    paddingVSizeS : {paddingTop:BASE.paddingSize.S,paddingBottom:BASE.paddingSize.S,},
+    paddingVSizeXS : {paddingTop:BASE.paddingSize.XS,paddingBottom:BASE.paddingSize.XS,},
+    paddingVSizeXXS : {paddingTop:BASE.paddingSize.XS,paddingBottom:BASE.paddingSize.XXS,},
+
+
+    paddingTopSizeXXL : {paddingTop:BASE.paddingSize.XXL,},
+    paddingTopSizeXL : {paddingTop:BASE.paddingSize.XL,},
+    paddingTopSizeL : {paddingTop:BASE.paddingSize.L,},
+    paddingTopSizeM : {paddingTop:BASE.paddingSize.M,},
+    paddingTopSizeS : {paddingTop:BASE.paddingSize.S,},
+    paddingTopSizeXS : {paddingTop:BASE.paddingSize.XS,},
+    paddingTopSizeXXS : {paddingTop:BASE.paddingSize.XXS,},
+
+    paddingBottomSizeXXL : {paddingBottom:BASE.paddingSize.XXL,},
+    paddingBottomSizeXL : {paddingBottom:BASE.paddingSize.XL,},
+    paddingBottomSizeL : {paddingBottom:BASE.paddingSize.L,},
+    paddingBottomSizeM : {paddingBottom:BASE.paddingSize.M,},
+    paddingBottomSizeS : {paddingBottom:BASE.paddingSize.S,},
+    paddingBottomSizeXS : {paddingBottom:BASE.paddingSize.XS,},
+    paddingBottomSizeXXS : {paddingBottom:BASE.paddingSize.XXS,},
+
+    paddingLeftSizeXXL : {paddingLeft:BASE.paddingSize.XXL,},
+    paddingLeftSizeXL : {paddingLeft:BASE.paddingSize.XL,},
+    paddingLeftSizeL : {paddingLeft:BASE.paddingSize.L,},
+    paddingLeftSizeM : {paddingLeft:BASE.paddingSize.M,},
+    paddingLeftSizeS : {paddingLeft:BASE.paddingSize.S,},
+    paddingLeftSizeXS : {paddingLeft:BASE.paddingSize.XS,},
+    paddingLeftSizeXXS : {paddingLeft:BASE.paddingSize.XXS,},
+
+    paddingRightSizeXXL : {paddingRight:BASE.paddingSize.XXL,},
+    paddingRightSizeXL : {paddingRight:BASE.paddingSize.XL,},
+    paddingRightSizeL : {paddingRight:BASE.paddingSize.L,},
+    paddingRightSizeM : {paddingRight:BASE.paddingSize.M,},
+    paddingRightSizeS : {paddingRight:BASE.paddingSize.S,},
+    paddingRightSizeXS : {paddingRight:BASE.paddingSize.XS,},
+    paddingRightSizeXXS : {paddingRight:BASE.paddingSize.XXS,},
+    
+    paddingSizeXXL : {padding:BASE.paddingSize.XXL,},
+    paddingSizeXL : {padding:BASE.paddingSize.XL,},
+    paddingSizeL : {padding:BASE.paddingSize.L,},
+    paddingSizeM : {padding:BASE.paddingSize.M,},
+    paddingSizeS : {padding:BASE.paddingSize.S,},
+    paddingSizeXS : {padding:BASE.paddingSize.XS,},
+    paddingSizeXXS : {padding:BASE.paddingSize.XXS,},
+    
+    
+
 
 });
 

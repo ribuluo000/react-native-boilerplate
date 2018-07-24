@@ -32,6 +32,34 @@ const BASE = {
         v0 : 0,
     },
 
+    //间距大小
+    marginSize : {
+
+        XXL : 30,
+        XL : 26,
+        L : 20,
+        M : 16,
+        S : 10,
+        XS : 8,
+        XXS : 5,
+        v3 : 3,
+        v0 : 0,
+    },
+
+    //间距大小
+    paddingSize : {
+
+        XXL : 30,
+        XL : 26,
+        L : 20,
+        M : 16,
+        S : 10,
+        XS : 8,
+        XXS : 5,
+        v3 : 3,
+        v0 : 0,
+    },
+
     //边框大小
     borderWidth : {
         XXL : 20,

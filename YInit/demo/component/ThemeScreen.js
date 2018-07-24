@@ -40,6 +40,8 @@ class ThemeScreen extends PureComponent {
                 style={[
                     {
                         flex:1,
+                        minHeight:10,
+                        minWidth:2,
                         backgroundColor:T.B.backgroundColor.red,
 
                     }
@@ -137,6 +139,98 @@ class ThemeScreen extends PureComponent {
                 backgroundColor:T.B.backgroundColor.blue,
             }
         ];
+
+
+        let s_padding_XXL = [
+            T.CS.paddingSizeXXL,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_padding_XL = [
+            T.CS.paddingSizeXL,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_padding_L = [
+            T.CS.paddingSizeL,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_padding_M = [
+            T.CS.paddingSizeM,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_padding_S = [
+            T.CS.paddingSizeS,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_padding_XS = [
+            T.CS.paddingSizeXS,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_padding_XXS = [
+            T.CS.paddingSizeXXS,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+
+
+
+        let s_margin_XXL = [
+            T.CS.marginSizeXXL,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_margin_XL = [
+            T.CS.marginSizeXL,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_margin_L = [
+            T.CS.marginSizeL,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_margin_M = [
+            T.CS.marginSizeM,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_margin_S = [
+            T.CS.marginSizeS,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_margin_XS = [
+            T.CS.marginSizeXS,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_margin_XXS = [
+            T.CS.marginSizeXXS,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+
+
+
         return (
             <View style={T.CS.container}>
                 <ScrollView>
@@ -317,7 +411,110 @@ class ThemeScreen extends PureComponent {
                     </View>
 
                 </View>
-                <Button
+
+                    <Text style={styles.instructions}>
+                        paddingSize
+
+                    </Text>
+                    <View
+                        style={[
+                            T.CS.flexDirectionColumn,
+                        ]}
+                    >
+
+                        <View
+                            style={s_padding_XXL}
+                        >
+                            {v_content}
+                        </View>
+                        <View
+                            style={s_padding_XL}
+                        >
+                            {v_content}
+                        </View>
+                        <View
+                            style={s_padding_L}
+                        >
+                            {v_content}
+                        </View>
+                        <View
+                            style={s_padding_M}
+                        >
+                            {v_content}
+                        </View>
+
+                        <View
+                            style={s_padding_S}
+                        >
+                            {v_content}
+                        </View>
+
+                        <View
+                            style={s_padding_XS}
+                        >
+                            {v_content}
+                        </View>
+
+                        <View
+                            style={s_padding_XXS}
+                        >
+                            {v_content}
+                        </View>
+
+                    </View>
+
+                    <Text style={styles.instructions}>
+                        marginSize
+
+                    </Text>
+                    <View
+                        style={[
+                            T.CS.flexDirectionColumn,
+                        ]}
+                    >
+
+                        <View
+                            style={s_margin_XXL}
+                        >
+                            {v_content}
+                        </View>
+                        <View
+                            style={s_margin_XL}
+                        >
+                            {v_content}
+                        </View>
+                        <View
+                            style={s_margin_L}
+                        >
+                            {v_content}
+                        </View>
+                        <View
+                            style={s_margin_M}
+                        >
+                            {v_content}
+                        </View>
+
+                        <View
+                            style={s_margin_S}
+                        >
+                            {v_content}
+                        </View>
+
+                        <View
+                            style={s_margin_XS}
+                        >
+                            {v_content}
+                        </View>
+
+                        <View
+                            style={s_margin_XXS}
+                        >
+                            {v_content}
+                        </View>
+
+                    </View>
+
+                    <Button
                     onPress={() => {
                     }}
                     title="update data"
