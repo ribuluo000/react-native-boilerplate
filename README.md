@@ -7,13 +7,24 @@ yarn add redux react-redux redux-thunk remote-redux-devtools react-navigation-re
 
 yarn add redux-devtools -D
 yarn add babel-plugin-module-resolver -D
-yarn add prop-types
 
 yarn add invariant hoist-non-react-statics lodash whatwg-fetch
 
 yarn add remote-redux-devtools-sp
-yarn add babel-polyfill
-yarn add moment
+yarn add babel-polyfill moment prop-types
+
+
+
+need link :
+yarn add ribuluo000/react-native-orientation 
+react-native link react-native-orientation 
+
+以下依赖，如果有必要，请自行添加
+yarn add react-native-splash-screen 
+react-native link react-native-splash-screen 
+
+
+
 
 
 
