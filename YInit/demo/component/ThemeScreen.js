@@ -149,6 +149,7 @@ class ThemeScreen extends PureComponent {
                 <View
                     style={[
                         T.CS.flexDirectionRow,
+                        T.CS.justifyContentSpaceAround,
                     ]}
                 >
 
@@ -167,6 +168,7 @@ class ThemeScreen extends PureComponent {
                 <View
                     style={[
                         T.CS.flexDirectionRow,
+                        T.CS.justifyContentSpaceAround,
                     ]}
                 >
 
@@ -192,6 +194,7 @@ class ThemeScreen extends PureComponent {
                 <View
                     style={[
                         T.CS.flexDirectionRow,
+                        T.CS.justifyContentSpaceAround,
                     ]}
                 >
 
