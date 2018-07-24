@@ -18,8 +18,9 @@ import reducer_counter from "./reducer_counter";
 import saga_counter from "./saga_counter";
 import * as action_counter from "./action_counter";
 import { api_login } from "src/app/action_auth";
+import BaseComponent from "src/component/BaseComponent";
 
-class CounterContainer extends PureComponent {
+class CounterContainer extends BaseComponent {
 
     static navigationOptions = {
         title : 'MainPage',

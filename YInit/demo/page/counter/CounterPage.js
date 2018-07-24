@@ -3,8 +3,10 @@ import { StyleSheet, Text, View } from "react-native";
 import Button from "demo/component/Button";
 import T from "src/style/T";
 import PropTypes from "prop-types";
+import BaseComponent from "src/component/BaseComponent";
 
-export default class CounterPage extends Component {
+export default class CounterPage extends BaseComponent {
+
     static propTypes = {
         decrementFn : PropTypes.func.isRequired,
         incrementFn : PropTypes.func.isRequired,
@@ -18,7 +20,6 @@ export default class CounterPage extends Component {
     };
 
     render() {
-        console.log('counter');
         console.log(this.props);
         const { decrementFn, incrementFn, counter } = this.props;
         return (

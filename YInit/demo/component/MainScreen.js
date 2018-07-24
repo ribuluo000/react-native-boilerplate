@@ -5,6 +5,7 @@ import LoginStatusMessage from "./LoginStatusMessage";
 import AuthButton from "./AuthButton";
 import StorageButton from "./main/StorageButton";
 import ThemeButton from "./main/ThemeButton";
+import CounterButton from "./main/CounterButton";
 
 const styles = StyleSheet.create({
     container : {
@@ -21,6 +22,7 @@ const MainScreen = () => (
         <AuthButton />
         <StorageButton />
         <ThemeButton />
+        <CounterButton />
 
     </View>
 );
