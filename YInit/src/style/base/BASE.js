@@ -2,6 +2,8 @@ import COLOR from "./COLOR";
 import { PixelRatio } from "react-native";
 const transparentColor = 'transparent';
 
+const sw = 375;
+
 const BASE = {
     ...COLOR,
 
@@ -84,21 +86,21 @@ const BASE = {
         container : COLOR.grey.color4,
     },
 
-    //间距大小
+    //图标大小
     iconSize : {
 
-        XXL : {width:187,height:187,padding:4},
-        XL : {width:124,height:124,padding:4},
-        L : {width:93,height:93,padding:4},
-        M : {width:48,height:48,padding:4},
-        S : {width:32,height:32,padding:4},
-        XS : {width:24,height:24,padding:4},
-        XXS : {width:20,height:20,padding:4},
+        XXL : Math.round(sw/2),
+        XL : Math.round(sw/3),
+        L : Math.round(sw/4),
+        M : 48,
+        S : 32,
+        XS : 24,
+        XXS : 20,
     },
 
     /***********天火*********/
     //按钮大小
-    btnHeight : {
+    btnSize : {
         XXL : 50,
         XL : 46,
         L : 40,

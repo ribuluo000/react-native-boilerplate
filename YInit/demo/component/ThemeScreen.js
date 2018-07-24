@@ -48,48 +48,91 @@ class ThemeScreen extends PureComponent {
         );
 
         let sXXL = [
-            T.B.iconSize.XXL,
+            T.CS.iconSizeXXL,
             {
                 backgroundColor:T.B.backgroundColor.blue,
             }
         ];
 
         let sXL = [
-            T.B.iconSize.XL,
+            T.CS.iconSizeXL,
             {
                 backgroundColor:T.B.backgroundColor.blue,
             }
         ];
 
         let sL = [
-            T.B.iconSize.L,
+            T.CS.iconSizeL,
             {
                 backgroundColor:T.B.backgroundColor.blue,
             }
         ];
 
         let sM = [
-            T.B.iconSize.M,
+            T.CS.iconSizeM,
             {
                 backgroundColor:T.B.backgroundColor.blue,
             }
         ];
 
         let sS = [
-            T.B.iconSize.S,
+            T.CS.iconSizeS,
             {
                 backgroundColor:T.B.backgroundColor.blue,
             }
         ];
 
         let sXS = [
-            T.B.iconSize.XS,
+            T.CS.iconSizeXS,
             {
                 backgroundColor:T.B.backgroundColor.blue,
             }
         ];
         let sXXS = [
-            T.B.iconSize.XXS,
+            T.CS.iconSizeXXS,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+
+        let s_btn_XXL = [
+            T.CS.btnSizeXXL,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_btn_XL = [
+            T.CS.btnSizeXL,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_btn_L = [
+            T.CS.btnSizeL,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_btn_M = [
+            T.CS.btnSizeM,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_btn_S = [
+            T.CS.btnSizeS,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_btn_XS = [
+            T.CS.btnSizeXS,
+            {
+                backgroundColor:T.B.backgroundColor.blue,
+            }
+        ];
+        let s_btn_XXS = [
+            T.CS.btnSizeXXS,
             {
                 backgroundColor:T.B.backgroundColor.blue,
             }
@@ -101,7 +144,58 @@ class ThemeScreen extends PureComponent {
                     ThemeScreen
                 </Text>
                 <Text style={styles.instructions}>
-                    This is great
+                    btnSize
+
+                </Text>
+                    <View
+                        style={[
+                            T.CS.flexDirectionColumn,
+                        ]}
+                    >
+
+                        <View
+                            style={s_btn_XXL}
+                        >
+                            {v_content}
+                        </View>
+                        <View
+                            style={s_btn_XL}
+                        >
+                            {v_content}
+                        </View>
+                        <View
+                            style={s_btn_L}
+                        >
+                            {v_content}
+                        </View>
+                        <View
+                            style={s_btn_M}
+                        >
+                            {v_content}
+                        </View>
+
+                        <View
+                            style={s_btn_S}
+                        >
+                            {v_content}
+                        </View>
+
+                        <View
+                            style={s_btn_XS}
+                        >
+                            {v_content}
+                        </View>
+
+                        <View
+                            style={s_btn_XXS}
+                        >
+                            {v_content}
+                        </View>
+
+                    </View>
+
+                <Text style={styles.instructions}>
+                    iconSize
 
                 </Text>
                 <View

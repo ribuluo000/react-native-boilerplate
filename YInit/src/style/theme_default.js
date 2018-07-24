@@ -129,6 +129,25 @@ const commonStyles = StyleSheet.create({
     visible : {
         display : 'flex',
     },
+    //图标大小
+    iconSizeXXL : {width:BASE.iconSize.XXL,height:BASE.iconSize.XXL,padding:4},
+    iconSizeXL : {width:BASE.iconSize.XL,height:BASE.iconSize.XL,padding:4},
+    iconSizeL : {width:BASE.iconSize.L,height:BASE.iconSize.L,padding:4},
+    iconSizeM : {width:BASE.iconSize.M,height:BASE.iconSize.M,padding:4},
+    iconSizeS : {width:BASE.iconSize.S,height:BASE.iconSize.S,padding:4},
+    iconSizeXS : {width:BASE.iconSize.XS,height:BASE.iconSize.XS,padding:4},
+    iconSizeXXS : {width:BASE.iconSize.XXS,height:BASE.iconSize.XXS,padding:4},
+
+
+    //按钮大小
+    btnSizeXXL : {height:BASE.btnSize.XXL,padding:2},
+    btnSizeXL : {height:BASE.btnSize.XL,padding:2},
+    btnSizeL : {height:BASE.btnSize.L,padding:2},
+    btnSizeM : {height:BASE.btnSize.M,padding:2},
+    btnSizeS : {height:BASE.btnSize.S,padding:2},
+    btnSizeXS : {height:BASE.btnSize.XS,padding:2},
+    btnSizeXXS : {height:BASE.btnSize.XXS,padding:2},
+
 
 });
 
