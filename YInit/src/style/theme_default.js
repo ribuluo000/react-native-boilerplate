@@ -43,7 +43,7 @@ const pixelSize = (function () {
 const commonStyles = StyleSheet.create({
     container : {
         flex : 1,
-        backgroundColor : BASE.backgroundColor.Container,
+        backgroundColor : BASE.backgroundColor.container,
         alignItems : 'stretch',
 
     },

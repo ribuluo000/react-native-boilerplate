@@ -56,32 +56,44 @@ const BASE = {
 
     //边框色
     borderColor : {
-        Gray : COLOR.grey.color6,    //灰
+        gray : COLOR.grey.color6,    //灰
         Green : COLOR.green.color6,    //绿
     },
 
     // 字体色
     textColor : {
-        Black : COLOR.grey.color10,    //黑
-        Gray : COLOR.grey.color7,      //灰
-        White : COLOR.grey.color1,     //白
-        Orange : COLOR.orange.color6,     //橙
-        Blue : COLOR.blue.color7,     //蓝
-        Yellow : COLOR.yellow.color6,     //黄   
+        black : COLOR.grey.color10,    //黑
+        gray : COLOR.grey.color7,      //灰
+        white : COLOR.grey.color1,     //白
+        orange : COLOR.orange.color6,     //橙
+        blue : COLOR.blue.color7,     //蓝
+        yellow : COLOR.yellow.color6,     //黄
     },
 
     // 背景色
     backgroundColor : {
-        Gray : COLOR.grey.color4, //灰
-        White : COLOR.grey.color1, //白
-        Black : COLOR.grey.color9, //黑
+        gray : COLOR.grey.color4, //灰
+        white : COLOR.grey.color1, //白
+        black : COLOR.grey.color9, //黑
         Green : COLOR.green.color6, //绿
-        Orange : COLOR.orange.color6, //橙
-        Blue : COLOR.blue.color5, //蓝
-        Red : COLOR.red.color5, //红
-        Yellow : COLOR.yellow.color1, //黄
-        Transparent : transparentColor,
-        Container : COLOR.grey.color4,
+        orange : COLOR.orange.color6, //橙
+        blue : COLOR.blue.color5, //蓝
+        red : COLOR.red.color5, //红
+        yellow : COLOR.yellow.color1, //黄
+        transparent : transparentColor,
+        container : COLOR.grey.color4,
+    },
+
+    //间距大小
+    iconSize : {
+
+        XXL : {width:187,height:187,padding:4},
+        XL : {width:124,height:124,padding:4},
+        L : {width:93,height:93,padding:4},
+        M : {width:48,height:48,padding:4},
+        S : {width:32,height:32,padding:4},
+        XS : {width:24,height:24,padding:4},
+        XXS : {width:20,height:20,padding:4},
     },
 
     /***********天火*********/

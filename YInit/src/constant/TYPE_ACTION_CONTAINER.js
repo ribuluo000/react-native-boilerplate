@@ -11,5 +11,6 @@ export default {
     "LoginScreen" : "LoginScreen",
     "MainScreen" : "MainScreen",
     "StorageScreen" : "StorageScreen",
+    "ThemeScreen" : "ThemeScreen",
 
 };

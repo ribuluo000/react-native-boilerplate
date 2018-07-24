@@ -44,6 +44,7 @@ function reducer_nav(state = initialNavState, action) {
         case TYPE_ACTION.ProfileScreen:
         case TYPE_ACTION.MainScreen:
         case TYPE_ACTION.StorageScreen:
+        case TYPE_ACTION.ThemeScreen:
             nextState = RootNavigator.router.getStateForAction(
                 NavigationActions.navigate({ routeName: action.type }),
                 state
