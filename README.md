@@ -73,7 +73,7 @@ yarn add babel-polyfill moment prop-types
 ```
 ### need link :
 ```
-yarn add ribuluo000/react-native-orientation 
+yarn add react-native-orientation 
 react-native link react-native-orientation 
 
 yarn add react-native-i18n
@@ -81,6 +81,11 @@ react-native link react-native-i18n
 
 yarn add react-native-fast-image
 react-native link react-native-fast-image
+
+
+yarn add react-native-svg
+react-native link react-native-svg
+
 
 
 ```
@@ -157,5 +162,11 @@ if(!global._babelPolyfill) { require('babel-polyfill'); }
 [https://github.com/jhen0409/react-native-debugger/blob/master/docs/redux-devtools-integration.md
 ](https://github.com/jhen0409/react-native-debugger/blob/master/docs/redux-devtools-integration.md
 )
+
+
+### Package not compatible with React Native 0.56 (Android) 
+
+参考：
+[https://github.com/react-native-community/react-native-svg/issues/730](https://github.com/react-native-community/react-native-svg/issues/730)
 
 

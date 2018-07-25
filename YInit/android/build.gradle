@@ -31,6 +31,17 @@ allprojects {
     }
 }
 
+subprojects { subproject ->
+    afterEvaluate {
+        if ((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
+            android {
+                compileSdkVersion rootProject.ext.compileSdkVersion
+                buildToolsVersion rootProject.ext.buildToolsVersion
+            }
+        }
+    }
+}
+
 ext {
     buildToolsVersion = "26.0.3"
     minSdkVersion = 16

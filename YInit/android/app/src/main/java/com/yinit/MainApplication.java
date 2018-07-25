@@ -3,6 +3,7 @@ package com.yinit;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.horcrux.svg.SvgPackage;
 import com.dylanvann.fastimage.FastImageViewPackage;
 import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
 import com.github.yamill.orientation.OrientationPackage;
@@ -26,6 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new SvgPackage(),
             new FastImageViewPackage(),
             new RNI18nPackage(),
             new OrientationPackage()
