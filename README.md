@@ -10,16 +10,27 @@ https://github.com/ribuluo000/react-native-boilerplate
 ### 项目简述
 
 [大项目下的 module 管理 使用绝对路径 import module 避免相对路径 babel-plugin-module-resolver https://github.com/tleunen/babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver)
+
 [redux https://redux.js.org/](https://redux.js.org/)
+
 [redux-saga https://redux-saga.js.org/](https://redux-saga.js.org/)
+
 [reselect https://github.com/reduxjs/reselect](https://github.com/reduxjs/reselect)
+
 [immutable https://facebook.github.io/immutable-js/](https://facebook.github.io/immutable-js/)
+
 [redux-immutable https://github.com/gajus/redux-immutable](https://github.com/gajus/redux-immutable)
+
 [moment https://github.com/moment/moment](https://github.com/moment/moment)
+
 [react-native-i18n 国际化 https://github.com/AlexanderZaytsev/react-native-i18n](https://github.com/AlexanderZaytsev/react-native-i18n)
+
 [react-navigation https://github.com/react-navigation/react-navigation](https://github.com/react-navigation/react-navigation)
+
 [react-navigation-redux-helpers https://github.com/react-navigation/react-navigation-redux-helpers](https://github.com/react-navigation/react-navigation-redux-helpers)
+
 [remote-redux-devtools-sp https://www.npmjs.com/package/remote-redux-devtools-sp](https://www.npmjs.com/package/remote-redux-devtools-sp)
+
 []()
 []()
 []()
@@ -33,7 +44,9 @@ https://github.com/ribuluo000/react-native-boilerplate
 image
 
 [react-native-fast-image https://github.com/DylanVann/react-native-fast-image](https://github.com/DylanVann/react-native-fast-image)
+
 [react-native-image-progress https://github.com/oblador/react-native-image-progress](https://github.com/oblador/react-native-image-progress)
+
 [react-native-progress https://github.com/oblador/react-native-progress](https://github.com/oblador/react-native-progress)
 
 
@@ -98,7 +111,9 @@ yarn add react-native-image-progress react-native-progress
 ### remote-redux-devtools@^0.5.12 doesn't work with latest RN 0.56 release
 
 解决方案：
+
 [https://github.com/zalmoxisus/remote-redux-devtools/issues/117](https://github.com/zalmoxisus/remote-redux-devtools/issues/117)
+
 
 ```
 Temporarily you can
@@ -117,7 +132,9 @@ Temporarily you can
 ### Can't find variable: Reflect
 
 解决方案：
+
 [https://github.com/feathersjs/socketio/issues/31](https://github.com/feathersjs/socketio/issues/31)
+
 
 ```
 Try installing babel-polyfill and then in your main application file adding
@@ -134,7 +151,9 @@ if(!global._babelPolyfill) { require('babel-polyfill'); }
 [https://github.com/ribuluo000/react-native-boilerplate/blob/master/YInit/src/app/store.js
 ](https://github.com/ribuluo000/react-native-boilerplate/blob/master/YInit/src/app/store.js
 )
+
 [https://github.com/jhen0409/react-native-debugger/blob/master/docs/redux-devtools-integration.md
 ](https://github.com/jhen0409/react-native-debugger/blob/master/docs/redux-devtools-integration.md
 )
+
 
