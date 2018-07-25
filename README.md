@@ -1,5 +1,5 @@
 # react-native-boilerplate
-###react-native-boilerplate 
+### react-native-boilerplate 
 
 https://github.com/ribuluo000/react-native-boilerplate
 后续RN项目可以基于这个项目进行开发，这个项目目前还在开发阶段，会集成一些基础库，
@@ -7,7 +7,8 @@ https://github.com/ribuluo000/react-native-boilerplate
 详见package.json
 
 
-###项目简述
+### 项目简述
+
 [大项目下的 module 管理 使用绝对路径 import module 避免相对路径 babel-plugin-module-resolver https://github.com/tleunen/babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 [redux https://redux.js.org/](https://redux.js.org/)
 [redux-saga https://redux-saga.js.org/](https://redux-saga.js.org/)
@@ -40,7 +41,7 @@ image
 
 ---
 
-###no need link
+### no need link
 ```
 
 
@@ -57,7 +58,7 @@ yarn add babel-polyfill moment prop-types
 
 
 ```
-###need link :
+### need link :
 ```
 yarn add ribuluo000/react-native-orientation 
 react-native link react-native-orientation 
@@ -70,7 +71,7 @@ react-native link react-native-fast-image
 
 
 ```
-###以下依赖，如果有必要，请自行添加
+### 以下依赖，如果有必要，请自行添加
 ```
 yarn add react-native-splash-screen 
 react-native link react-native-splash-screen 
@@ -79,7 +80,7 @@ react-native link react-native-splash-screen
 
 
 ```
-###need config
+### need config
 ```
 yarn add react-native-fast-image
 react-native link react-native-fast-image
@@ -92,9 +93,9 @@ yarn add react-native-image-progress react-native-progress
 ```
 
 
-##note:
+## note:
 
-###remote-redux-devtools@^0.5.12 doesn't work with latest RN 0.56 release
+### remote-redux-devtools@^0.5.12 doesn't work with latest RN 0.56 release
 
 解决方案：
 [https://github.com/zalmoxisus/remote-redux-devtools/issues/117](https://github.com/zalmoxisus/remote-redux-devtools/issues/117)
@@ -113,7 +114,7 @@ Temporarily you can
 ```
 
 
-###Can't find variable: Reflect
+### Can't find variable: Reflect
 
 解决方案：
 [https://github.com/feathersjs/socketio/issues/31](https://github.com/feathersjs/socketio/issues/31)
@@ -125,7 +126,9 @@ if(!global._babelPolyfill) { require('babel-polyfill'); }
 
 ```
 
+
 ### Redux DevTools Integration
+
 
 参考：
 [https://github.com/ribuluo000/react-native-boilerplate/blob/master/YInit/src/app/store.js
@@ -134,3 +137,4 @@ if(!global._babelPolyfill) { require('babel-polyfill'); }
 [https://github.com/jhen0409/react-native-debugger/blob/master/docs/redux-devtools-integration.md
 ](https://github.com/jhen0409/react-native-debugger/blob/master/docs/redux-devtools-integration.md
 )
+
