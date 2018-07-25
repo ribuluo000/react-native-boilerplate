@@ -13,6 +13,7 @@ export default {
     "StorageScreen" : "StorageScreen",
     "ThemeScreen" : "ThemeScreen",
     "I18nScreen" : "I18nScreen",
+    "ImageScreen" : "ImageScreen",
     "CounterContainer" : "CounterContainer",
 
 };

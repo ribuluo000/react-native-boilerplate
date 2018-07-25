@@ -23,10 +23,25 @@ https://github.com/ribuluo000/react-native-boilerplate
 []()
 []()
 []()
+[]()
+[]()
+
+
+
+
+image
+
+[react-native-fast-image https://github.com/DylanVann/react-native-fast-image](https://github.com/DylanVann/react-native-fast-image)
+[react-native-image-progress https://github.com/oblador/react-native-image-progress](https://github.com/oblador/react-native-image-progress)
+[react-native-progress https://github.com/oblador/react-native-progress](https://github.com/oblador/react-native-progress)
+
 
 
 
 ---
+
+###no need link
+```
 
 
 
@@ -41,8 +56,9 @@ yarn add remote-redux-devtools-sp
 yarn add babel-polyfill moment prop-types
 
 
-
+```
 ###need link :
+```
 yarn add ribuluo000/react-native-orientation 
 react-native link react-native-orientation 
 
@@ -52,15 +68,28 @@ react-native link react-native-i18n
 yarn add react-native-fast-image
 react-native link react-native-fast-image
 
+
+```
 ###以下依赖，如果有必要，请自行添加
+```
 yarn add react-native-splash-screen 
 react-native link react-native-splash-screen 
 
 
 
 
+```
+###need config
+```
+yarn add react-native-fast-image
+react-native link react-native-fast-image
+
+yarn add react-native-image-progress react-native-progress
 
 
+
+
+```
 
 
 ##note:
