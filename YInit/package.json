@@ -16,6 +16,7 @@
     "prop-types": "^15.6.2",
     "react": "16.4.1",
     "react-native": "0.56.0",
+    "react-native-device-info": "^0.22.0",
     "react-native-fast-image": "^4.0.14",
     "react-native-i18n": "^2.0.15",
     "react-native-image-progress": "^1.1.1",

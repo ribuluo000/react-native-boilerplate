@@ -8,6 +8,7 @@ import ThemeButton from "./main/ThemeButton";
 import CounterButton from "./main/CounterButton";
 import I18nButton from "./main/I18nButton";
 import ImageButton from "./main/ImageButton";
+import DeviceInfoButton from "./main/DeviceInfoButton";
 
 const styles = StyleSheet.create({
     container : {
@@ -27,6 +28,7 @@ const MainScreen = () => (
         <CounterButton />
         <I18nButton />
         <ImageButton />
+        <DeviceInfoButton />
 
     </View>
 );

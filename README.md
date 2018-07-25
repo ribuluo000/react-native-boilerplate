@@ -88,6 +88,10 @@ react-native link react-native-svg
 
 
 
+yarn add react-native-device-info
+react-native link react-native-device-info
+
+
 ```
 ### 以下依赖，如果有必要，请自行添加
 ```

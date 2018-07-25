@@ -14,6 +14,7 @@ export default {
     "ThemeScreen" : "ThemeScreen",
     "I18nScreen" : "I18nScreen",
     "ImageScreen" : "ImageScreen",
+    "DeviceInfoScreen" : "DeviceInfoScreen",
     "CounterContainer" : "CounterContainer",
 
 };

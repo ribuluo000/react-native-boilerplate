@@ -5,6 +5,7 @@ import StorageScreen from 'demo/component/StorageScreen';
 import ThemeScreen from 'demo/component/ThemeScreen';
 import I18nScreen from 'demo/component/I18nScreen';
 import ImageScreen from 'demo/component/ImageScreen';
+import DeviceInfoScreen from 'demo/component/DeviceInfoScreen';
 import CounterContainer from 'demo/container/counter/CounterContainer';
 export default {
     CounterContainer: { screen: CounterContainer },//demo counter
@@ -15,4 +16,5 @@ export default {
     ThemeScreen: { screen: ThemeScreen },
     I18nScreen: { screen: I18nScreen },
     ImageScreen: { screen: ImageScreen },
+    DeviceInfoScreen: { screen: DeviceInfoScreen },
 }
