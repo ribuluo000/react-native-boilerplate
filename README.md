@@ -97,7 +97,7 @@ yarn add react-native-image-progress react-native-progress
 ###remote-redux-devtools@^0.5.12 doesn't work with latest RN 0.56 release
 
 解决方案：
-https://github.com/zalmoxisus/remote-redux-devtools/issues/117
+[https://github.com/zalmoxisus/remote-redux-devtools/issues/117](https://github.com/zalmoxisus/remote-redux-devtools/issues/117)
 
 ```
 Temporarily you can
@@ -116,7 +116,7 @@ Temporarily you can
 ###Can't find variable: Reflect
 
 解决方案：
-https://github.com/feathersjs/socketio/issues/31
+[https://github.com/feathersjs/socketio/issues/31](https://github.com/feathersjs/socketio/issues/31)
 
 ```
 Try installing babel-polyfill and then in your main application file adding
@@ -124,3 +124,13 @@ Try installing babel-polyfill and then in your main application file adding
 if(!global._babelPolyfill) { require('babel-polyfill'); }
 
 ```
+
+### Redux DevTools Integration
+
+参考：
+[https://github.com/ribuluo000/react-native-boilerplate/blob/master/YInit/src/app/store.js
+](https://github.com/ribuluo000/react-native-boilerplate/blob/master/YInit/src/app/store.js
+)
+[https://github.com/jhen0409/react-native-debugger/blob/master/docs/redux-devtools-integration.md
+](https://github.com/jhen0409/react-native-debugger/blob/master/docs/redux-devtools-integration.md
+)
