@@ -19,6 +19,9 @@ need link :
 yarn add ribuluo000/react-native-orientation 
 react-native link react-native-orientation 
 
+yarn add react-native-i18n
+react-native link react-native-i18n
+
 以下依赖，如果有必要，请自行添加
 yarn add react-native-splash-screen 
 react-native link react-native-splash-screen 
@@ -30,7 +33,7 @@ react-native link react-native-splash-screen
 
 note:
 
-remote-redux-devtools@^0.5.12 doesn't work with latest RN 0.56 release
+###remote-redux-devtools@^0.5.12 doesn't work with latest RN 0.56 release
 
 解决方案：
 https://github.com/zalmoxisus/remote-redux-devtools/issues/117
@@ -49,7 +52,7 @@ Temporarily you can
 ```
 
 
-Can't find variable: Reflect
+###Can't find variable: Reflect
 
 解决方案：
 https://github.com/feathersjs/socketio/issues/31

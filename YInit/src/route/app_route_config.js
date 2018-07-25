@@ -3,6 +3,7 @@ import MainScreen from 'demo/component/MainScreen';
 import ProfileScreen from 'demo/component/ProfileScreen';
 import StorageScreen from 'demo/component/StorageScreen';
 import ThemeScreen from 'demo/component/ThemeScreen';
+import I18nScreen from 'demo/component/I18nScreen';
 import CounterContainer from 'demo/container/counter/CounterContainer';
 export default {
     CounterContainer: { screen: CounterContainer },//demo counter
@@ -11,4 +12,5 @@ export default {
     ProfileScreen: { screen: ProfileScreen },
     StorageScreen: { screen: StorageScreen },
     ThemeScreen: { screen: ThemeScreen },
+    I18nScreen: { screen: I18nScreen },
 }

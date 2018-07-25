@@ -6,6 +6,7 @@ import AuthButton from "./AuthButton";
 import StorageButton from "./main/StorageButton";
 import ThemeButton from "./main/ThemeButton";
 import CounterButton from "./main/CounterButton";
+import I18nButton from "./main/I18nButton";
 
 const styles = StyleSheet.create({
     container : {
@@ -23,6 +24,7 @@ const MainScreen = () => (
         <StorageButton />
         <ThemeButton />
         <CounterButton />
+        <I18nButton />
 
     </View>
 );

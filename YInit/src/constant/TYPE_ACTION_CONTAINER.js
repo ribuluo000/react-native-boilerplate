@@ -12,6 +12,7 @@ export default {
     "MainScreen" : "MainScreen",
     "StorageScreen" : "StorageScreen",
     "ThemeScreen" : "ThemeScreen",
+    "I18nScreen" : "I18nScreen",
     "CounterContainer" : "CounterContainer",
 
 };
