@@ -148,9 +148,11 @@ if(!global._babelPolyfill) { require('babel-polyfill'); }
 
 
 参考：
-[https://github.com/ribuluo000/react-native-boilerplate/blob/master/YInit/src/app/store.js
+[react-native https://github.com/ribuluo000/react-native-boilerplate/blob/master/YInit/src/app/store.js
 ](https://github.com/ribuluo000/react-native-boilerplate/blob/master/YInit/src/app/store.js
 )
+
+[react https://github.com/ribuluo000/react_inventory/blob/master/inventory/app/configureStore.js](https://github.com/ribuluo000/react_inventory/blob/master/inventory/app/configureStore.js)
 
 [https://github.com/jhen0409/react-native-debugger/blob/master/docs/redux-devtools-integration.md
 ](https://github.com/jhen0409/react-native-debugger/blob/master/docs/redux-devtools-integration.md
