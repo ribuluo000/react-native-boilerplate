@@ -23,7 +23,7 @@ import BaseComponent from "src/component/BaseComponent";
 class CounterContainer extends BaseComponent {
 
     static navigationOptions = {
-        title : 'MainPage',
+        title : 'CounterContainer',
     };
 
     render() {

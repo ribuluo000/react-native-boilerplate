@@ -1,13 +1,13 @@
 /**
  * Created by nick on 2017/12/4.
  */
-import { createStore, applyMiddleware, compose } from 'redux';
-import { fromJS } from 'immutable';
+import { applyMiddleware, createStore } from "redux";
+import { fromJS } from "immutable";
 import { composeWithDevTools } from "remote-redux-devtools-sp";
 import thunk from "redux-thunk";
-import createSagaMiddleware from 'redux-saga';
-import createReducer from './reducer';
-import { middleware } from 'src/route/AppNavigator';
+import createSagaMiddleware from "redux-saga";
+import createReducer from "./reducer";
+import { middleware } from "src/route/AppNavigator";
 const sagaMiddleware = createSagaMiddleware();
 
 /**
@@ -174,20 +174,23 @@ console.log(process.env.NODE_ENV);
 
 
 export default function getStore(initialState = {}) {
+
+    const middlewares = [];
+    middlewares.push(sagaMiddleware);
+    middlewares.push(middleware);
+    middlewares.push(timeoutScheduler);
+    middlewares.push(thunk);
+    if (process.env.NODE_ENV === 'development') {
+        middlewares.push(logger);
+    }
+
+
     const store = createStore(
         createReducer(),
         fromJS(initialState),
         composeWithDevTools(
             applyMiddleware(
-                sagaMiddleware,
-                middleware,
-                // rafScheduler,
-                timeoutScheduler,
-                thunk,
-                // vanillaPromise,
-                // readyStatePromise,
-                // mDevelopmentUsefulMiddlewareOnly.logger,
-                logger,
+                ...middlewares
             ),
         )
     );
