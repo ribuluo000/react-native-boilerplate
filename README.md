@@ -95,8 +95,7 @@ react-native link react-native-device-info
 ```
 ### 以下依赖，如果有必要，请自行添加
 ```
-yarn add react-native-splash-screen 
-react-native link react-native-splash-screen 
+
 
 
 
@@ -109,6 +108,9 @@ react-native link react-native-fast-image
 
 yarn add react-native-image-progress react-native-progress
 
+
+yarn add react-native-splash-screen 
+react-native link react-native-splash-screen 
 
 
 

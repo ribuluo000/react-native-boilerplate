@@ -24,16 +24,19 @@ export default class setup extends BaseComponent {
     }
 
     componentWillMount() {
+        super.componentWillMount();
 
         y_init_util.init();
     }
 
     componentDidMount() {
+        super.componentDidMount();
         // this.appStateNetInfoCommon.componentDidMount();
 
     }
 
     componentWillUnmount() {
+        super.componentWillUnmount();
         // this.appStateNetInfoCommon.componentWillUnmount();
 
     }

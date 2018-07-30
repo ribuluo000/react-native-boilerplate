@@ -7,7 +7,7 @@
 
 import React from "react";
 import { BackHandler } from "react-native";
-// import SplashScreen from "react-native-splash-screen";   //todo need change
+import SplashScreen from "react-native-splash-screen";
 
 import y_orientation_util from "src/util/y_orientation_util";
 
@@ -34,7 +34,7 @@ export default class BaseCommon {
 
         // do stuff while splash screen is shown
         // After having done stuff (such as async tasks) hide the splash screen
-        // SplashScreen.hide(); //todo need change
+        SplashScreen.hide();
 
     }
 
