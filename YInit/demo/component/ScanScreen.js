@@ -1,7 +1,7 @@
 'use strict';
 import React, { PureComponent } from "react";
 import { Image, KeyboardAvoidingView, Platform, StyleSheet, Text, TouchableOpacity, Vibration, View } from "react-native";
-import { RNCamera } from "react-native-camera";
+import Camera,{ RNCamera } from "react-native-camera";
 import T from "src/style/T";
 // import HeaderNormalWithRightButtonComponent from "src/component/HeaderNormalWithRightButtonComponent";
 
@@ -167,6 +167,61 @@ export default class ScanScreen extends PureComponent {
         let centerBoxBorderColor = T.centerBoxBorderColor;
         let centerBoxAboveText = string_title;
 
+        let v_rn_camera = (
+            <RNCamera
+                ref={(cam) => {
+                    this.camera = cam;
+                }}
+                barCodeTypes={[RNCamera.Constants.BarCodeType.qr]}
+                style={styles.preview}
+                type={this.state.camera.type}
+                flashMode={this.state.camera.flashMode}
+                defaultTouchToFocus
+                mirrorImage={false}
+                // onBarCodeRead={(e) => {
+                //     console.log('onBarCodeRead',e);
+                //     this.onBarCodeRead(e);
+                // }}
+                onBarCodeRead={(d)=>{
+                    console.log('onTextRecognized',d);
+                    alert('onTextRecognized');
+
+                }}
+            >
+                <Text style={[ styles.centerBoxAboveText, { color : centerBoxBorderColor } ]}>
+                    {centerBoxAboveText}
+                </Text>
+                <Text style={[ centerBox, { borderColor : centerBoxBorderColor } ]}/>
+                <Text style={styles.capture} onPress={this.takePicture.bind(this)}>[CAPTURE]</Text>
+            </RNCamera>
+        );
+
+
+        let v_camera = (
+            <Camera
+                ref={(cam) => {
+                    this.camera = cam;
+                }}
+                style={styles.preview}
+                aspect={Camera.constants.Aspect.fill}
+                // onBarCodeRead={(e) => {
+                //     console.log('onBarCodeRead',e);
+                //     this.onBarCodeRead(e);
+                // }}
+                onBarCodeRead={(d)=>{
+                    console.log('onTextRecognized',d);
+                    alert('onTextRecognized');
+
+                }}
+            >
+                {/*<Text style={[ styles.centerBoxAboveText, { color : centerBoxBorderColor } ]}>*/}
+                    {/*{centerBoxAboveText}*/}
+                {/*</Text>*/}
+                {/*<Text style={[ centerBox, { borderColor : centerBoxBorderColor } ]}/>*/}
+            </Camera>
+        );
+
+        return v_rn_camera;
 
         let v = (<View
 
@@ -178,32 +233,7 @@ export default class ScanScreen extends PureComponent {
 
             <View style={styles.container}>
 
-                <RNCamera
-                    ref={(cam) => {
-                        this.camera = cam;
-                    }}
-                    barCodeTypes={[RNCamera.Constants.BarCodeType.qr]}
-                    style={styles.preview}
-                    type={this.state.camera.type}
-                    flashMode={this.state.camera.flashMode}
-                    defaultTouchToFocus
-                    mirrorImage={false}
-                    // onBarCodeRead={(e) => {
-                    //     console.log('onBarCodeRead',e);
-                    //     this.onBarCodeRead(e);
-                    // }}
-                     onBarCodeRead={(d)=>{
-                         console.log('onTextRecognized',d);
-                         alert(d);
-                    
-                     }}
-                >
-                    <Text style={[ styles.centerBoxAboveText, { color : centerBoxBorderColor } ]}>
-                        {centerBoxAboveText}
-                    </Text>
-                    <Text style={[ centerBox, { borderColor : centerBoxBorderColor } ]}/>
-                    <Text style={styles.capture} onPress={this.takePicture.bind(this)}>[CAPTURE]</Text>
-                </RNCamera>
+                {v_camera}
 
                 <View style={[ styles.overlay, styles.topOverlay, { display : 'none' } ]}>
                     <TouchableOpacity
