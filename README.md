@@ -183,3 +183,7 @@ if(!global._babelPolyfill) { require('babel-polyfill'); }
 [https://github.com/react-native-community/react-native-svg/issues/730](https://github.com/react-native-community/react-native-svg/issues/730)
 
 
+
+### [Android] configuration 'compile' is obsolete and has been replaced with 'implementation'.
+
+change *compile* to  *implementation*

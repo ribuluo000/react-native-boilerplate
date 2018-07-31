@@ -158,10 +158,7 @@ export default class ScanScreen extends PureComponent {
 
     render() {
 
-        let listHeight = 100;
         let string_title = 'qrcode';
-
-        const { mainReducer } = this.props;
 
         let centerBox = styles.centerBox;
         let centerBoxBorderColor = T.centerBoxBorderColor;
@@ -172,12 +169,12 @@ export default class ScanScreen extends PureComponent {
                 ref={(cam) => {
                     this.camera = cam;
                 }}
-                barCodeTypes={[RNCamera.Constants.BarCodeType.qr]}
+                // barCodeTypes={[RNCamera.Constants.BarCodeType.qr]}
                 style={styles.preview}
                 type={this.state.camera.type}
                 flashMode={this.state.camera.flashMode}
                 defaultTouchToFocus
-                mirrorImage={false}
+                // mirrorImage={false}
                 // onBarCodeRead={(e) => {
                 //     console.log('onBarCodeRead',e);
                 //     this.onBarCodeRead(e);
@@ -222,48 +219,6 @@ export default class ScanScreen extends PureComponent {
         );
 
         return v_rn_camera;
-
-        let v = (<View
-
-            style={[ { backgroundColor : 'transparent', flex : 1, } ]}>
-            {/*<HeaderNormalWithRightButtonComponent*/}
-                {/*textCenter={string_title}*/}
-                {/*onBackPress={this.onBackPress}*/}
-            {/*/>*/}
-
-            <View style={styles.container}>
-
-                {v_camera}
-
-                <View style={[ styles.overlay, styles.topOverlay, { display : 'none' } ]}>
-                    <TouchableOpacity
-                        style={styles.flashButton}
-                        onPress={
-                            () => {
-                                this.switchFlash();
-                            }
-                        }
-                    >
-                        <Image
-                            source={this.flashIcon}
-                        />
-                    </TouchableOpacity>
-                </View>
-
-            </View>
-        </View>);
-        if (Platform.OS == 'android') {
-            return v;
-        } else {
-            return (
-                <KeyboardAvoidingView
-                    behavior="padding"
-                    style={[ { backgroundColor : 'transparent', flex : 1, } ]}
-                >
-                    {v}
-                </KeyboardAvoidingView>
-            );
-        }
     }
 
 }
