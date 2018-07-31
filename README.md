@@ -112,6 +112,13 @@ yarn add react-native-image-progress react-native-progress
 yarn add react-native-splash-screen 
 react-native link react-native-splash-screen 
 
+yarn add react-native-camera 
+react-native link react-native-camera 
+-
+拍照可以；
+Android扫码不好用；
+IOS扫码没有测试；
+-
 
 
 ```

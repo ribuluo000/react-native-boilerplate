@@ -765,6 +765,11 @@ const original = {
 
     iconColorHeaderLeft : BASE.grey.color4,
 
+    //scan container
+    centerBoxBorderColor : BASE.blue.color4,
+
+
+
 };
 
 const theme_default = {

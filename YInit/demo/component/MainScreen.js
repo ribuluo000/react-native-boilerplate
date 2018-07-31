@@ -9,6 +9,7 @@ import CounterButton from "./main/CounterButton";
 import I18nButton from "./main/I18nButton";
 import ImageButton from "./main/ImageButton";
 import DeviceInfoButton from "./main/DeviceInfoButton";
+import ScanButton from "./main/ScanButton";
 
 const styles = StyleSheet.create({
     container : {
@@ -29,6 +30,7 @@ const MainScreen = () => (
         <I18nButton />
         <ImageButton />
         <DeviceInfoButton />
+        <ScanButton />
 
     </View>
 );

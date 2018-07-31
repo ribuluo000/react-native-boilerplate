@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "./script/post.sh",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
@@ -16,6 +17,7 @@
     "prop-types": "^15.6.2",
     "react": "16.4.1",
     "react-native": "0.56.0",
+    "react-native-camera": "git+https://git@github.com/react-native-community/react-native-camera",
     "react-native-device-info": "^0.22.0",
     "react-native-fast-image": "^4.0.14",
     "react-native-i18n": "^2.0.15",
