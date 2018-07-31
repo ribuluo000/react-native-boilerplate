@@ -5,12 +5,12 @@ import y_init_util from "src/util/y_init_util";
 import { InteractionManager, View } from "react-native";
 import T from "src/style/T";
 import BaseComponent from "src/component/BaseComponent";
-// import AppStateNetInfoCommon from "src/common/AppStateNetInfoCommon";
+import AppStateNetInfoCommon from "src/common/AppStateNetInfoCommon";
 
 export default class setup extends BaseComponent {
     constructor(props) {
         super(props);
-        // this.appStateNetInfoCommon = new AppStateNetInfoCommon({});
+        this.appStateNetInfoCommon = new AppStateNetInfoCommon();
 
         this.state = {
             initDataSuccess : true,
@@ -31,13 +31,13 @@ export default class setup extends BaseComponent {
 
     componentDidMount() {
         super.componentDidMount();
-        // this.appStateNetInfoCommon.componentDidMount();
+        this.appStateNetInfoCommon.componentDidMount();
 
     }
 
     componentWillUnmount() {
         super.componentWillUnmount();
-        // this.appStateNetInfoCommon.componentWillUnmount();
+        this.appStateNetInfoCommon.componentWillUnmount();
 
     }
 

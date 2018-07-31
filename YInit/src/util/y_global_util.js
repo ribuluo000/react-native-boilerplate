@@ -5,6 +5,7 @@ import { fromJS,Map,List,Set, } from "immutable";
 import Storage from "react-native-storage";
 import { Alert, AsyncStorage, Platform } from "react-native";
 
+import y_tmp_data_util from './y_tmp_data_util';
 // import my_string_util from './my_string_util';
 // import my_constant_util from './my_constant_util';
 // import style_util from './style_util';
@@ -55,6 +56,7 @@ export default {
       // 对于react native
       global.storage = storage;
 
+      global.y_tmp_data_util = y_tmp_data_util;
 
 
     //
