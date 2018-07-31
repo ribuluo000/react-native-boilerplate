@@ -85,4 +85,8 @@ export default {
     // global.access_token = '';
     // global.user_id = '';
   },
+
+    init_data:(callback)=>{
+      callback(true);
+    },
 };

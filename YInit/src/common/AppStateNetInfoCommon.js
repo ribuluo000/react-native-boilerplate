@@ -8,7 +8,7 @@
 import React from "react";
 import { AppState, NetInfo } from "react-native";
 import y_view_util from "src/util/y_view_util";
-import I18n from "src/constant/i18n/i18n";
+import y_i18n_util from "src/util/y_i18n_util";
 
 export default class AppStateNetInfoCommon {
     constructor() {
@@ -71,7 +71,7 @@ export default class AppStateNetInfoCommon {
             type === 'none' || type === 'unknown'
         ) {
             global.y_tmp_data_util.m_net_is_connected = false;
-            y_view_util.show_toast(I18n.t('please_check_network_state'));
+            y_view_util.show_toast(y_i18n_util.t('please_check_network_state'));
         } else {
             if (type === 'wifi') {
                 global.y_tmp_data_util.m_net_is_wifi = true;
@@ -92,7 +92,7 @@ export default class AppStateNetInfoCommon {
         // alert('isConnected '+isConnected)
         console.log('global.y_tmp_data_util.m_net_is_connected', global.y_tmp_data_util.m_net_is_connected);
         if (!isConnected) {
-            y_view_util.show_toast(I18n.t('please_check_network_state'));
+            y_view_util.show_toast(y_i18n_util.t('please_check_network_state'));
         }
 
     }

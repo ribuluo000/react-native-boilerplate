@@ -2,9 +2,9 @@
  * 视图显示工具类
  */
 import React from "react";
-import { Keyboard, StatusBar, Text, View,BackHandler } from "react-native";
+import { BackHandler, Keyboard, StatusBar, Text, View } from "react-native";
 // import Toast from "teaset/components/Toast/Toast";
-// import LoadingUtil from "./LoadingUtil";
+import y_loading_util from "./y_loading_util";
 // import * as action_nav from "src/app/action_nav";
 // import * as action_auth from "src/app/action_auth";
 
@@ -28,10 +28,10 @@ let y_view_util = {
     },
 
     show_toast_loading(timeOut = 10000){
-        // LoadingUtil.showLoading(timeOut);
+        y_loading_util.show_loading(timeOut);
     },
     dismiss_toast_loading(){
-        // LoadingUtil.dismissLoading();
+        y_loading_util.dismiss_loading();
 
     },
 

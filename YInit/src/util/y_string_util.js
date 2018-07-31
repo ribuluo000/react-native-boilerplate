@@ -2,27 +2,46 @@
  * Created by nick on 2017/4/20.
  * 字符串操作工具类
  */
-import y_verification from './y_verification';
+import y_verification from "./y_verification";
 let y_string_util = {
-    object_is_available(object){
+    /**
+     * 判断对象是否可用
+     * @param object 对象
+     * @returns {bool} 对象是否可用
+     */
+    is_object_available(object){
         if ('undefind' == object || null == object) {
             return false;
         }
         return true;
     },
 
-    string_is_available(object){
+    /**
+     * 判断对象或字符串是否可用
+     * @param object 对象
+     * @returns {bool} 对象或字符串是否可用
+     */
+    is_string_available(object){
         if ('undefind' == object || null == object || '' == object || '-1' == object) {
             return false;
         }
         return true;
     },
 
-
+    /**
+     * 对象转json
+     * @param object 对象
+     * @returns {string} 转换后的json字符串
+     */
     object_2_json(object){
         return JSON.stringify(object);
     },
 
+    /**
+     * 清除字符串首尾的空格
+     * @param str
+     *
+     */
     trim(str){
         return str.replace(/(^\s*)|(\s*$)/g, '');
     },
@@ -126,7 +145,7 @@ let y_string_util = {
             hash = ((hash << 5) - hash) + chr;
             hash |= 0; // Convert to 32bit integer
         }
-        return hash;
+        return 'hash_' + hash;
     },
 
     /**

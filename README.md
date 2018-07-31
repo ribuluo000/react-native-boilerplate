@@ -188,3 +188,71 @@ if(!global._babelPolyfill) { require('babel-polyfill'); }
 ### [Android] configuration 'compile' is obsolete and has been replaced with 'implementation'.
 
 change *compile* to  *implementation*
+
+
+
+###全局统一
+
+```
+全局loading 
+y_view_util.show_toast_loading()
+y_view_util.dismiss_toast_loading()
+；
+全局toast 
+y_view_util.show_toast('msg')
+；
+
+应用内显示的数据通过
+y_i18n_util.t(‘key’)
+获取；
+
+判断设备是否联网、是否WiFi连接：
+    m_net_is_connected : false, //是否联网  true,false
+    m_net_is_wifi : false,      //是否是WiFi连接   true,false
+；
+
+存取本地数据：
+y_storage_util.get_value_by_key(key,callback);
+y_storage_util.set_key_value(key,value);
+;
+
+根据数据获取唯一字符串:
+//item 是string 或者 object
+y_string_util.hashcode(item)
+;
+
+清除字符串首尾的空格:
+//item 是string
+y_string_util.trim(item)
+;
+
+    /**
+     * 对象转json
+     * @param object 对象
+     * @returns {string} 转换后的json字符串
+     */
+y_string_util.object_2_json(object)
+;
+
+    /**
+     * 判断对象或字符串是否可用
+     * @param object 对象
+     * @returns {bool} 对象或字符串是否可用
+     */
+y_string_util.is_string_available(object)
+;
+
+根据数据获取唯一字符串:
+    /**
+     *
+     * @param base_url  https://api.xxx.com
+     * @param params    {"k1":"v1","k2":"v2",}
+     * @returns {*} https://api.xxx.com?k1=v1&k2=v2
+     */
+y_string_util.get_url_by_base_url_and_params(base_url, params)
+;
+
+
+
+
+```

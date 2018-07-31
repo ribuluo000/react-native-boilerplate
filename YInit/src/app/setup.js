@@ -1,11 +1,13 @@
 import React, { PureComponent } from "react";
 import App from "./App";
 import y_init_util from "src/util/y_init_util";
-// import MyLoading from "src/component/MyLoading";
+import MyLoadingComponent from "src/component/MyLoadingComponent";
 import { InteractionManager, View } from "react-native";
 import T from "src/style/T";
 import BaseComponent from "src/component/BaseComponent";
 import AppStateNetInfoCommon from "src/common/AppStateNetInfoCommon";
+import y_view_util from "../util/y_view_util";
+import y_global_util from "../util/y_global_util";
 
 export default class setup extends BaseComponent {
     constructor(props) {
@@ -13,13 +15,13 @@ export default class setup extends BaseComponent {
         this.appStateNetInfoCommon = new AppStateNetInfoCommon();
 
         this.state = {
-            initDataSuccess : true,
+            init_data_success : false,
 
-            // setInitDataSuccess : () => {
-            //     this.baseCommon.mounted && this.setState({
-            //         initDataSuccess : true,
-            //     });
-            // },
+            set_init_data_success : () => {
+                this.baseCommon.mounted && this.setState({
+                    init_data_success : true,
+                });
+            },
         };
     }
 
@@ -46,27 +48,30 @@ export default class setup extends BaseComponent {
             <View
                 style={[ T.CS.container ]}
             >
-                {this.state.initDataSuccess && <App/>}
-                {/*{*/}
-                    {/*<MyLoading*/}
-                        {/*ref={(ref) => {*/}
-                            {/*global.TmpDataUtil.mLoadingComponentRef = ref;*/}
-                            {/*if (!this.state.initDataSuccess) {*/}
-                                {/*ViewUtil.showToastLoading(30 * 60 * 1000);*/}
-                                {/*InteractionManager.runAfterInteractions(() => {*/}
+                {this.state.init_data_success && <App/>}
+                {
+                    <MyLoadingComponent
+                        ref={(ref) => {
+                            global.y_tmp_data_util.m_ref_LoadingComponent = ref;
+                            if (!this.state.init_data_success) {
+                                y_view_util.show_toast_loading(30 * 60 * 1000);
+                                InteractionManager.runAfterInteractions(() => {
 
-                                    {/*GlobalDataUtil.initData((success) => {*/}
-                                        {/*console.log("initDataSuccess:", success);*/}
-                                        {/*if (success) {*/}
-                                            {/*this.state.setInitDataSuccess();*/}
-                                            {/*ViewUtil.dismissToastLoading();*/}
-                                        {/*}*/}
-                                    {/*});*/}
-                                {/*});*/}
-                            {/*}*/}
-                        {/*}}*/}
-                    {/*/>*/}
-                {/*}*/}
+                                    y_global_util.init_data((success) => {
+                                        console.log("init_data:", success);
+                                        if (success) {
+                                            setTimeout(() => {
+                                                this.state.set_init_data_success();
+                                                y_view_util.dismiss_toast_loading();
+                                            }, 2000);
+
+                                        }
+                                    });
+                                });
+                            }
+                        }}
+                    />
+                }
             </View>
         );
     }

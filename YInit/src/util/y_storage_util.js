@@ -4,7 +4,7 @@
  */
 
 import React from "react";
-// import y_view_util from "./y_view_util";
+import y_view_util from "./y_view_util";
 
 export async function get_value_by_key(key,
     callback = () => {
@@ -30,7 +30,7 @@ export async function set_key_value(key, value) {
     try {
         storage.save({ key : key, data : value });
     } catch (e) {
-        console.error(e);
-        // y_view_util.show_toast(key + ':' + value + ' save error!');
+        console.log(e);
+        y_view_util.show_toast(key + ':' + value + ' save error!');
     }
 }
