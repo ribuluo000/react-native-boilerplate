@@ -16,6 +16,7 @@ export default {
     "ImageScreen" : "ImageScreen",
     "DeviceInfoScreen" : "DeviceInfoScreen",
     "ScanScreen" : "ScanScreen",
+    "SimpleScreen" : "SimpleScreen",
     "CounterContainer" : "CounterContainer",
 
 };

@@ -7,6 +7,7 @@ import I18nScreen from 'demo/component/I18nScreen';
 import ImageScreen from 'demo/component/ImageScreen';
 import DeviceInfoScreen from 'demo/component/DeviceInfoScreen';
 import ScanScreen from 'demo/component/ScanScreen';
+import SimpleScreen from 'demo/component/SimpleScreen';
 import CounterContainer from 'demo/container/counter/CounterContainer';
 export default {
     CounterContainer: { screen: CounterContainer },//demo counter
@@ -19,4 +20,5 @@ export default {
     ImageScreen: { screen: ImageScreen },
     DeviceInfoScreen: { screen: DeviceInfoScreen },
     ScanScreen: { screen: ScanScreen },
+    SimpleScreen: { screen: SimpleScreen },
 }

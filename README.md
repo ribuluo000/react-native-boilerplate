@@ -68,6 +68,7 @@ yarn add invariant hoist-non-react-statics lodash whatwg-fetch
 
 yarn add remote-redux-devtools-sp
 yarn add babel-polyfill moment prop-types
+yarn add react-native-qrcode
 
 
 ```

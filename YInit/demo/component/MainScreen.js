@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View,ScrollView } from "react-native";
 
 import LoginStatusMessage from "./LoginStatusMessage";
 import AuthButton from "./AuthButton";
@@ -10,6 +10,7 @@ import I18nButton from "./main/I18nButton";
 import ImageButton from "./main/ImageButton";
 import DeviceInfoButton from "./main/DeviceInfoButton";
 import ScanButton from "./main/ScanButton";
+import SimpleButton from "./main/SimpleButton";
 
 const styles = StyleSheet.create({
     container : {
@@ -22,16 +23,22 @@ const styles = StyleSheet.create({
 
 const MainScreen = () => (
     <View style={styles.container}>
-        <LoginStatusMessage />
-        <AuthButton />
-        <StorageButton />
-        <ThemeButton />
-        <CounterButton />
-        <I18nButton />
-        <ImageButton />
-        <DeviceInfoButton />
-        <ScanButton />
+        <ScrollView>
+            <ScanButton />
+            <SimpleButton />
 
+            <LoginStatusMessage />
+            <AuthButton />
+            <StorageButton />
+            <ThemeButton />
+            <CounterButton />
+            <I18nButton />
+            <ImageButton />
+            <DeviceInfoButton />
+
+
+
+        </ScrollView>
     </View>
 );
 
