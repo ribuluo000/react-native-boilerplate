@@ -16,16 +16,20 @@
  * @type {{lastPressTime: number, onPress: ((callback))}}
  */
 
-export default {
+const y_press_only_once_util = {
 
     interval : 600,
     lastPressTime : 1,
     onPress : (callback) => {
         let curTime = new Date().getTime();
-        if (curTime - this.lastPressTime > this.interval) {
-            this.lastPressTime = curTime;
+        console.log('onPress',curTime,y_press_only_once_util.lastPressTime,y_press_only_once_util.interval);
+
+        if (curTime - y_press_only_once_util.lastPressTime > y_press_only_once_util.interval) {
+            y_press_only_once_util.lastPressTime = curTime;
             callback && callback();
         }
     },
 
 };
+
+export default y_press_only_once_util;

@@ -26,11 +26,26 @@ class CounterContainer extends BaseComponent {
         title : 'CounterContainer',
     };
 
+    componentDidMount() {
+        super.componentDidMount();
+
+    }
+
+    componentWillMount() {
+        super.componentWillMount();
+    }
+
+    componentWillUnmount() {
+        super.componentWillUnmount();
+
+    }
+
     render() {
+        console.log('CounterContainer.render',this.props);
         const { count, increment, decrement, onPress_login } = this.props;
         return (
             <View style={styles.container}>
-                <CounterPage incrementFn={increment} decrementFn={decrement} counter={count}>
+                <CounterPage incrementFn={increment} decrementFn={decrement} counter={count} {...this.props}>
                 </CounterPage>
                 <TouchableOpacity onPress={onPress_login} style={{ marginTop : 50 }}>
                     <View>

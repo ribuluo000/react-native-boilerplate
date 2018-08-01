@@ -1,0 +1,11 @@
+/**
+ * Created by nick on 2018/7/22.
+ */
+/**
+ * 图标类型
+ */
+export default {
+    TYPE_HEADER_RIGHT_BTN__MAIN_NO_BORDER : 'TYPE_HEADER_RIGHT_BTN__MAIN_NO_BORDER',
+    TYPE_HEADER_RIGHT_BTN__MAIN_WITH_BORDER : 'TYPE_HEADER_RIGHT_BTN__MAIN_WITH_BORDER',
+
+};

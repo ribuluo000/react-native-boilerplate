@@ -25,7 +25,7 @@ export default class BaseCommon {
 
     componentDidMount() {
         this.mounted = true;
-        if (this.props.backPress) {
+        if (this.props.onBackPress) {
             BackHandler.addEventListener('hardwareBackPress', this._onHardwareBackPress);
         }
         if (this.props._orientationDidChange) {
@@ -39,7 +39,7 @@ export default class BaseCommon {
     }
 
     componentWillUnmount() {
-        if (this.props.backPress) {
+        if (this.props.onBackPress) {
             BackHandler.removeEventListener('hardwareBackPress', this._onHardwareBackPress);
         }
 
@@ -53,7 +53,7 @@ export default class BaseCommon {
 
     //todo im
     onHardwareBackPress(e) {
-        return this.props.backPress(e);
+        return this.props.onBackPress(e);
     }
 
     //todo orientation Start

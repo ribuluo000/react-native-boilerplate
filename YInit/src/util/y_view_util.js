@@ -5,6 +5,8 @@ import React from "react";
 import { BackHandler, Keyboard, StatusBar, Text, View } from "react-native";
 // import Toast from "teaset/components/Toast/Toast";
 import y_loading_util from "./y_loading_util";
+import T from "src/style/T";
+
 // import * as action_nav from "src/app/action_nav";
 // import * as action_auth from "src/app/action_auth";
 
@@ -41,7 +43,7 @@ let y_view_util = {
             <StatusBar
                 animated={true}
                 hidden={false}
-                backgroundColor={Theme.backgroundColorHeader}
+                backgroundColor={T.B.backgroundColorHeader}
                 translucent={false}
                 barStyle={'dark-content'}
                 showHideTransition={'fade'}
