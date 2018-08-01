@@ -254,5 +254,11 @@ y_string_util.get_url_by_base_url_and_params(base_url, params)
 
 
 
+所有图片通过以下方式展示
+                    {y_icon_util.getIcon(img_url,{width:30,height:30,backgroundColor:'red'},y_icon_util.TYPE_ICON.IMG_NET)}
+                    {y_icon_util.getIcon(require('src/assets/image/test.jpg'),{width:30,height:30},y_icon_util.TYPE_ICON.IMG_LOCAL)}
+                    {y_icon_util.getIcon(svg_url,{width:30,height:30,backgroundColor:'red'},y_icon_util.TYPE_ICON.SVG_NET)}
+                    {y_icon_util.getIcon(require('src/assets/svg/left.svg'),{width:30,height:30},y_icon_util.TYPE_ICON.SVG_LOCAL)}
+
 
 ```

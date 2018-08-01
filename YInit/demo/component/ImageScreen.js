@@ -10,6 +10,7 @@ import * as Progress from "react-native-progress";
 import Image from "react-native-image-progress";
 import ProgressBar from "react-native-progress/Bar";
 import y_string_util from 'src/util/y_string_util';
+import y_icon_util from 'src/util/y_icon_util';
 const styles = StyleSheet.create({
     container : {
         flex : 1,
@@ -57,6 +58,10 @@ class ImageScreen extends PureComponent {
                 </Text>
                 <ScrollView>
 
+                    {y_icon_util.getIcon(img_url,{width:30,height:30,backgroundColor:'red'},y_icon_util.TYPE_ICON.IMG_NET)}
+                    {y_icon_util.getIcon(require('src/assets/image/test.jpg'),{width:30,height:30},y_icon_util.TYPE_ICON.IMG_LOCAL)}
+                    {y_icon_util.getIcon(svg_url,{width:30,height:30,backgroundColor:'red'},y_icon_util.TYPE_ICON.SVG_NET)}
+                    {y_icon_util.getIcon(require('src/assets/svg/left.svg'),{width:30,height:30},y_icon_util.TYPE_ICON.SVG_LOCAL)}
 
                     <MySvgComponent
                         style={{ width : 50, height : 50 }}
@@ -64,7 +69,7 @@ class ImageScreen extends PureComponent {
                     />
                     <MySvgComponent
                         key={y_string_util.hashcode(svg_url)}
-                        style={{ width : 200, height : 200 }}
+                        style={{ width : 200, height : 200}}
                         source={{
                             uri : svg_url,
                         }}
