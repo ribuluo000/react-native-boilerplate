@@ -4,6 +4,8 @@
 import { fromJS,Map,List,Set, } from "immutable";
 import Storage from "react-native-storage";
 import { Alert, AsyncStorage, Platform } from "react-native";
+import y_device_info_util from "src/util/y_device_info_util";
+import config from "src/config/default";
 
 import y_tmp_data_util from './y_tmp_data_util';
 // import my_string_util from './my_string_util';
@@ -20,6 +22,7 @@ export default {
     global.IMap = Map;
     global.IList = List;
     global.ISet = Set;
+    global.config = config;
 
 
     //todo storage
@@ -115,8 +118,22 @@ export default {
     //
     //
     //
-    // global.access_token = '';
-    // global.user_id = '';
+
+
+      /**
+       * 请求接口时要添加的字段
+       */
+        global.cur_time = undefined;    //当前时间
+        global.access_token = undefined;    //token
+        global.user_id = undefined;
+        global.from = 'APP';
+        global.device_unique_id = y_device_info_util.getUniqueID();
+        global.device_brand = y_device_info_util.getBrand();
+        global.app_build_number = y_device_info_util.getBuildNumber();
+        global.device_OS = Platform.OS;    //ios android
+        global.device_system_version = y_device_info_util.getSystemVersion();    //ios - 10.0      android - 4.1.1
+
+
   },
 
     init_data:(callback)=>{
