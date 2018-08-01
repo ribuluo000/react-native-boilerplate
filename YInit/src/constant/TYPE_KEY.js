@@ -33,6 +33,7 @@ export default {
     "KEY_NAV" : "KEY_NAV",
     "KEY_AUTH" : "KEY_AUTH",
     "KEY_COUNTER" : "KEY_COUNTER",
+    "KEY_WEB_VIEW" : "KEY_WEB_VIEW",
 
 
 };

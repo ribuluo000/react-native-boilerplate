@@ -261,4 +261,25 @@ y_string_util.get_url_by_base_url_and_params(base_url, params)
                     {y_icon_util.getIcon(require('src/assets/svg/left.svg'),{width:30,height:30},y_icon_util.TYPE_ICON.SVG_LOCAL)}
 
 
+
+只在开发模式下console.log，生产模式没有console.log;
+
+切换到其他应用：
+导航、打电话等
+y_turn_2_other_app_util
+；
+
+
+展示WebView 页面：
+    onPress : () => dispatch({ type : TYPE_ACTION.ShowWebViewContainer,payload:{
+        uri : 'https://www.baidu.com',
+        header_title : 'https://www.baidu.com',
+    } }),
+
+通用header
+YHeaderNormalWithRightButtonComponent
+自带返回键默认处理，可以重写
+；
+
+
 ```

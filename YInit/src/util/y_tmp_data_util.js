@@ -26,7 +26,69 @@ let y_tmp_data_util = {
         
         return arr;
     },
-    
+
+
+    /**
+     * Picker antd 根据选中的值找到选中项的内容
+     * @param selectedValue     选中的值
+     * @param selectableData    所有可以被选中的值的集合
+     */
+    getSelectedObject(selectedValue, selectableData){
+        let curSelected = null;
+
+        for (let i = 0;
+            i < selectableData[ 0 ].length;
+            i++) {
+            if (selectedValue[ 0 ] == selectableData[ 0 ][ i ].value) {
+                curSelected = selectableData[ 0 ][ i ];
+                break;
+            }
+        }
+
+        return curSelected;
+    },
+
+    /**
+     *
+     * 根据selectedValue找到数组children中的被选中的项
+     *
+     * @param selectedValue     'value'
+     * @param selectableData    [{label:'',value:''},]
+     * @returns {*}
+     */
+    getSelectedObjectFromArray(selectedValue, selectableData){
+        let curSelected = null;
+
+        for (let i = 0;
+            i < selectableData.length;
+            i++) {
+            if (selectedValue == selectableData[ i ].value) {
+                curSelected = selectableData[ i ];
+                break;
+            }
+        }
+
+        return curSelected;
+    },
+
+    /**
+     * 给dataList中的item添加key字段。
+     * @param dataList
+     */
+    getFlatListDataList(dataList = [], uniqueFiledName = undefined){
+        let newDataList = [];
+        dataList.map((item) => {
+            let newItem = {
+                ...item,
+                key : uniqueFiledName ? item[ uniqueFiledName ] : y_string_util.hashcode(item),
+            };
+            newDataList.push(newItem);
+        });
+
+        return newDataList;
+    },
+
+
 
     get_qr_code_info_gn : (qr_code_url) => {
         let gn = '';

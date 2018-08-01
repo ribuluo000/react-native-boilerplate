@@ -7,6 +7,10 @@
  */
 export default {
     "CONTAINER" : "CONTAINER",
+
+    "ShowWebViewContainer":"ShowWebViewContainer",
+
+
     "ProfileScreen" : "ProfileScreen",
     "LoginScreen" : "LoginScreen",
     "MainScreen" : "MainScreen",

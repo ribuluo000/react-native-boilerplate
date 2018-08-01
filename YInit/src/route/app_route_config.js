@@ -9,7 +9,12 @@ import DeviceInfoScreen from 'demo/component/DeviceInfoScreen';
 import ScanScreen from 'demo/component/ScanScreen';
 import SimpleScreen from 'demo/component/SimpleScreen';
 import CounterContainer from 'demo/container/counter/CounterContainer';
+import ShowWebViewContainer from 'src/container/webview/ShowWebViewContainer';
 export default {
+
+    ShowWebViewContainer: { screen: ShowWebViewContainer },//
+
+
     CounterContainer: { screen: CounterContainer },//demo counter
     LoginScreen: { screen: LoginScreen }, //demo react-navigation
     MainScreen: { screen: MainScreen },

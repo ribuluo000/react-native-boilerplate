@@ -1,20 +1,18 @@
 /**
  * Created by nick on 2018/7/22.
  */
-import { NavigationActions } from 'react-navigation';
+import { NavigationActions } from "react-navigation";
 
-import { RootNavigator } from 'src/route/AppNavigator';
-import TYPE_ACTION from 'src/constant/TYPE_ACTION';
+import { RootNavigator } from "src/route/AppNavigator";
+import TYPE_ACTION from "src/constant/TYPE_ACTION";
 
 //demo counter
 //demo api_login
 const demo_counter_login = TYPE_ACTION.CounterContainer;
 
-
 //demo react-navigation
 const demo_react_navigation = TYPE_ACTION.LoginScreen;
 const demo_main = TYPE_ACTION.MainScreen;
-
 
 // Start with two routes: The Main screen, with the Login screen on top.
 const firstAction = RootNavigator.router.getActionForPathAndParams(demo_main);
@@ -27,6 +25,7 @@ const initialNavState = RootNavigator.router.getStateForAction(
 
 function reducer_nav(state = initialNavState, action) {
     let nextState;
+    let routeName = action.type;
     switch (action.type) {
         case TYPE_ACTION.LoginScreen:
             nextState = RootNavigator.router.getStateForAction(
@@ -36,7 +35,7 @@ function reducer_nav(state = initialNavState, action) {
             break;
         case 'Logout':
             nextState = RootNavigator.router.getStateForAction(
-                NavigationActions.navigate({ routeName: 'Login' }),
+                NavigationActions.navigate({ routeName : 'Login' }),
                 state
             );
             break;
@@ -52,7 +51,17 @@ function reducer_nav(state = initialNavState, action) {
         case TYPE_ACTION.SimpleScreen:
         case TYPE_ACTION.CounterContainer:
             nextState = RootNavigator.router.getStateForAction(
-                NavigationActions.navigate({ routeName: action.type }),
+                NavigationActions.navigate({ routeName : routeName }),
+                state
+            );
+            break;
+        case TYPE_ACTION.ShowWebViewContainer:
+            nextState = RootNavigator.router.getStateForAction(
+                NavigationActions.navigate({
+                    routeName : routeName,
+                    params : action.payload,
+
+                }),
                 state
             );
             break;

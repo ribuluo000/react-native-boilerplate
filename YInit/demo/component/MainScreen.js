@@ -11,6 +11,7 @@ import ImageButton from "./main/ImageButton";
 import DeviceInfoButton from "./main/DeviceInfoButton";
 import ScanButton from "./main/ScanButton";
 import SimpleButton from "./main/SimpleButton";
+import ShowWebViewButton from "./main/ShowWebViewButton";
 
 const styles = StyleSheet.create({
     container : {
@@ -26,15 +27,18 @@ const MainScreen = () => (
         <ScrollView>
             <ScanButton />
             <SimpleButton />
+            <CounterButton />
+
 
             <LoginStatusMessage />
             <AuthButton />
             <StorageButton />
             <ThemeButton />
-            <CounterButton />
+
             <I18nButton />
             <ImageButton />
             <DeviceInfoButton />
+            <ShowWebViewButton />
 
 
 

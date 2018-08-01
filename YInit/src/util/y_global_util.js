@@ -59,7 +59,40 @@ export default {
       global.y_tmp_data_util = y_tmp_data_util;
 
 
-    //
+      //这里有个小技巧可以在发布时屏蔽掉所有的console.*调用。
+      // React Native中有一个全局变量__DEV__用于指示当前运行环境是否是开发环境。
+      // 我们可以据此在正式环境中替换掉系统原先的console实现。
+      if (!__DEV__) {
+          global.isDev = false;
+          global.console = {
+              info : () => {
+              },
+              log : () => {
+              },
+              warn : () => {
+              },
+              debug : () => {
+              },
+              error : () => {
+              },
+          };
+      } else {
+          global.isDev = true;
+          // global.console = {
+          //     info: () => {
+          //     },
+          //     log: () => {
+          //     },
+          //     warn: () => {
+          //     },
+          //     error: () => {
+          //     },
+          // };
+      }
+
+
+
+      //
     // global.my_string_util = my_string_util;
     // global.style_util = style_util;
     // global.y_view_util = y_view_util;
