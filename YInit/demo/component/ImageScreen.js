@@ -4,7 +4,7 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { Button, ScrollView, StyleSheet, Text, View } from "react-native";
-import MyImageComponent from "src/component/MyImageComponent";
+import YImageComponent from "src/component/YImageComponent";
 import MySvgComponent from "src/lib/svg_uri/MySvgComponent";
 import * as Progress from "react-native-progress";
 import Image from "react-native-image-progress";
@@ -77,12 +77,12 @@ class ImageScreen extends PureComponent {
 
 
 
-                    <MyImageComponent
+                    <YImageComponent
                         style={{ width : 50, height : 50 }}
                         source={require('src/assets/image/test.jpg')}
                     />
 
-                    <MyImageComponent
+                    <YImageComponent
                         key={y_string_util.hashcode(img_url)}
                         style={{ width : 200, height : 200 }}
                         source={{

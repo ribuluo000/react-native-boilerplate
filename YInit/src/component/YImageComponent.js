@@ -11,13 +11,13 @@ const ImageProgress = createImageProgress(FastImage);
 /**
  *
  *
- <MyImageComponent
+ <YImageComponent
  key={`productImages_${y_string_util.hashcode(uri)}`}
  style={{ height : 50, width : 50 }}
  source={sourceImg}/>
  */
 
-export default class MyImageComponent extends PureComponent {
+export default class YImageComponent extends PureComponent {
 
     static propTypes = {
         style : PropTypes.oneOfType([ PropTypes.number, PropTypes.array, PropTypes.object ]),

@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import App from "./App";
 import y_init_util from "src/util/y_init_util";
-import MyLoadingComponent from "src/component/MyLoadingComponent";
+import YLoadingComponent from "src/component/YLoadingComponent";
 import { InteractionManager, View } from "react-native";
 import T from "src/style/T";
 import BaseComponent from "src/component/BaseComponent";
@@ -50,7 +50,7 @@ export default class setup extends BaseComponent {
             >
                 {this.state.init_data_success && <App/>}
                 {
-                    <MyLoadingComponent
+                    <YLoadingComponent
                         ref={(ref) => {
                             global.y_tmp_data_util.m_ref_LoadingComponent = ref;
                             if (!this.state.init_data_success) {

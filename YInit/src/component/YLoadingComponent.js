@@ -6,7 +6,7 @@ import * as Progress from "react-native-progress";
 
 const ProgressCircle = Progress.Circle;
 
-export default class MyLoading extends BaseComponent {
+export default class YLoadingComponent extends BaseComponent {
     constructor(props) {
         super(props);
         this.minShowingTime = 100;

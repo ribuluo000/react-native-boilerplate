@@ -3,7 +3,7 @@
  * y_icon_util.getIcon()
  */
 import React from "react";
-import MyImageComponent from "src/component/MyImageComponent";
+import YImageComponent from "src/component/YImageComponent";
 import MySvgComponent from "src/lib/svg_uri/MySvgComponent";
 import y_string_util from "src/util/y_string_util";
 import zz_svg from "src/assets/svg/zz_svg";
@@ -87,7 +87,7 @@ let y_icon_util = {
             />
         );
         return (
-            <MyImageComponent
+            <YImageComponent
                 source={require('src/assets/image/test.jpg')}
                 style={{
                     width : style.width,
@@ -95,7 +95,7 @@ let y_icon_util = {
                 }}
             >
 
-            </MyImageComponent>
+            </YImageComponent>
         );
     },
 
@@ -127,7 +127,7 @@ let y_icon_util = {
     getIconFromLocal(source ='', style = {width : 30, height : 30,},defaultComponent) {
         let mDefaultComponent = defaultComponent || y_icon_util.getIconDefault(style);
         return (
-            <MyImageComponent
+            <YImageComponent
                 key={y_string_util.hashcode(source)}
                 style={[ style ]}
                 source={source}
@@ -137,7 +137,7 @@ let y_icon_util = {
         // switch (type) {
         //     case y_icon_util.IMG_LOCAL_NAME.test:
         //         return (
-        //             <MyImageComponent
+        //             <YImageComponent
         //                 key={y_string_util.hashcode(type)}
         //                 style={[ style ]}
         //                 source={require('src/assets/image/test.jpg')}
@@ -159,7 +159,7 @@ let y_icon_util = {
         let mDefaultComponent = defaultComponent || y_icon_util.getIconDefault(style);
 
         return (
-            <MyImageComponent
+            <YImageComponent
                 key={y_string_util.hashcode(uri)}
                 style={[ { width : 30, height : 30, }, style ]}
                 source={{ uri : uri }}
