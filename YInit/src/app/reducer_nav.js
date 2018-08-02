@@ -56,6 +56,7 @@ function reducer_nav(state = initialNavState, action) {
             );
             break;
         case TYPE_ACTION.ShowWebViewContainer:
+        case TYPE_ACTION.ShowSwiperContainer:
             nextState = RootNavigator.router.getStateForAction(
                 NavigationActions.navigate({
                     routeName : routeName,

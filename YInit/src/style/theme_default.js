@@ -130,13 +130,13 @@ const commonStyles = StyleSheet.create({
         display : 'flex',
     },
     //图标大小
-    iconSizeXXL : {width:BASE.iconSize.XXL,height:BASE.iconSize.XXL,padding:4},
-    iconSizeXL : {width:BASE.iconSize.XL,height:BASE.iconSize.XL,padding:4},
-    iconSizeL : {width:BASE.iconSize.L,height:BASE.iconSize.L,padding:4},
-    iconSizeM : {width:BASE.iconSize.M,height:BASE.iconSize.M,padding:4},
-    iconSizeS : {width:BASE.iconSize.S,height:BASE.iconSize.S,padding:4},
-    iconSizeXS : {width:BASE.iconSize.XS,height:BASE.iconSize.XS,padding:4},
-    iconSizeXXS : {width:BASE.iconSize.XXS,height:BASE.iconSize.XXS,padding:4},
+    iconSizeXXL : {width:BASE.iconSize.XXL,height:BASE.iconSize.XXL,margin:4},
+    iconSizeXL : {width:BASE.iconSize.XL,height:BASE.iconSize.XL,margin:4},
+    iconSizeL : {width:BASE.iconSize.L,height:BASE.iconSize.L,margin:4},
+    iconSizeM : {width:BASE.iconSize.M,height:BASE.iconSize.M,margin:4},
+    iconSizeS : {width:BASE.iconSize.S,height:BASE.iconSize.S,margin:4},
+    iconSizeXS : {width:BASE.iconSize.XS,height:BASE.iconSize.XS,margin:4},
+    iconSizeXXS : {width:BASE.iconSize.XXS,height:BASE.iconSize.XXS,margin:4},
 
 
     //按钮大小

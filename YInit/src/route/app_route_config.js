@@ -9,10 +9,15 @@ import DeviceInfoScreen from 'demo/component/DeviceInfoScreen';
 import ScanScreen from 'demo/component/ScanScreen';
 import SimpleScreen from 'demo/component/SimpleScreen';
 import CounterContainer from 'demo/container/counter/CounterContainer';
+
+
+
 import ShowWebViewContainer from 'src/container/webview/ShowWebViewContainer';
+import ShowSwiperContainer from 'src/container/swiper/ShowSwiperContainer';
 export default {
 
     ShowWebViewContainer: { screen: ShowWebViewContainer },//
+    ShowSwiperContainer: { screen: ShowSwiperContainer },//
 
 
     CounterContainer: { screen: CounterContainer },//demo counter

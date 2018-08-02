@@ -117,9 +117,9 @@ const BASE = {
     //图标大小
     iconSize : {
 
-        XXL : Math.round(sw/2),
-        XL : Math.round(sw/3),
-        L : Math.round(sw/4),
+        XXL : Math.round(sw/2-16),
+        XL : Math.round(sw/3-16),
+        L : Math.round(sw/4-16),
         M : 48,
         S : 32,
         XS : 24,

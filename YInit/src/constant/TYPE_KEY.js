@@ -34,6 +34,7 @@ export default {
     "KEY_AUTH" : "KEY_AUTH",
     "KEY_COUNTER" : "KEY_COUNTER",
     "KEY_WEB_VIEW" : "KEY_WEB_VIEW",
+    "KEY_SWIPER" : "KEY_SWIPER",
 
 
 };

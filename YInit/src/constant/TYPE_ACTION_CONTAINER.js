@@ -9,6 +9,7 @@ export default {
     "CONTAINER" : "CONTAINER",
 
     "ShowWebViewContainer":"ShowWebViewContainer",
+    "ShowSwiperContainer":"ShowSwiperContainer",
 
 
     "ProfileScreen" : "ProfileScreen",

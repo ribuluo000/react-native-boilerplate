@@ -68,7 +68,7 @@ yarn add invariant hoist-non-react-statics lodash whatwg-fetch
 
 yarn add remote-redux-devtools-sp
 yarn add babel-polyfill moment prop-types
-yarn add react-native-qrcode
+yarn add react-native-qrcode react-native-image-zoom-viewer
 
 
 ```
@@ -281,5 +281,34 @@ YHeaderNormalWithRightButtonComponent
 自带返回键默认处理，可以重写
 ；
 
+图片九宫格以及浏览大图：
+                    <YShowPictureAndAddComponent
+                        editable={true}
+                        show_img_swiper={(img_list, index_selected) => {
+                            // alert('i='+index_selected);
+                            //todo 浏览大图
+                            const { dispatch } = this.props.navigation;
+                            dispatch({ type : 'ShowSwiperContainer', payload : { img_list, index_selected } });
+
+                        }}
+                        onPress_remove_img={(img_list, index_selected) => {
+                            alert('Long i=' + index_selected);
+
+                        }}
+                        img_list={
+                            [
+                                { image_url : 'https://avatars3.githubusercontent.com/u/533360?v=3&s=466', },
+                                { image_url : 'https://assets-cdn.github.com/images/modules/site/business-hero.jpg', },
+                                { image_url : 'https://unsplash.it/400/400?image=151', },
+                                { image_url : 'https://unsplash.it/400/400?image=152', },
+                                { image_url : 'https://unsplash.it/400/400?image=153', },
+                                { image_url : 'https://unsplash.it/400/400?image=154', },
+                                { image_url : 'https://unsplash.it/400/400?image=155', },
+                                { image_url : 'https://unsplash.it/400/400?image=150', },
+                            ]
+                        }
+                    />
+
+；
 
 ```
