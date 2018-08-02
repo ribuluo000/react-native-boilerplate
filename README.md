@@ -191,6 +191,13 @@ change *compile* to  *implementation*
 
 
 
+
+### [react-navigation] Method `jumpToIndex` is deprecated. Please upgrade your code to use `jumpTo` instead.
+
+使用 `createBottomTabNavigator `代替`TabNavigator, TabBarBottom`
+
+
+
 ###全局统一
 
 ```

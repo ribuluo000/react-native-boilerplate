@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Text, View } from 'react-native';
-import { StackNavigator, TabNavigator, TabBarBottom } from 'react-navigation'; // Version can be specified in package.json
+import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'; // Version can be specified in package.json
 
 class HomeScreen extends React.Component {
     static navigationOptions = {
@@ -17,7 +17,7 @@ class HomeScreen extends React.Component {
                     onPress={() => this.props.navigation.navigate('Settings')}
                 />
                 <Button
-                    title="Go to Details"
+                    title="Go to StorageScreen"
                     onPress={() => this.props.navigation.navigate('StorageScreen')}
                 />
             </View>
@@ -36,7 +36,7 @@ class SettingsScreen extends React.Component {
                 />
                 <Button
                     title="Go to Details"
-                    onPress={() => this.props.navigation.navigate('StorageScreen')}
+                    onPress={() => this.props.navigation.navigate('Details')}
                 />
             </View>
         );
@@ -53,16 +53,16 @@ class DetailsScreen extends React.Component {
     }
 }
 
-const HomeStack = StackNavigator({
+const HomeStack = createStackNavigator({
     Home: { screen: HomeScreen },
 });
 
-const SettingsStack = StackNavigator({
+const SettingsStack = createStackNavigator({
     Settings: { screen: SettingsScreen },
     Details: { screen: DetailsScreen },
 });
 
-export default TabNavigator(
+export default createBottomTabNavigator(
     {
         Home: { screen: HomeStack },
         Settings: { screen: SettingsStack },
@@ -99,7 +99,6 @@ export default TabNavigator(
                 }} />;
             },
         }),
-        tabBarComponent: TabBarBottom,
         tabBarPosition: 'bottom',
         tabBarOptions: {
             activeTintColor: 'tomato',
