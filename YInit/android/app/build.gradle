@@ -101,6 +101,7 @@ android {
         applicationId "com.yinit"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        vectorDrawables.useSupportLibrary = true
         versionCode 1
         versionName "1.0"
         ndk {
@@ -137,6 +138,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-image-crop-picker')
     implementation project(':react-native-splash-screen')
     implementation project(':react-native-device-info')
     implementation project(':react-native-svg')

@@ -11,6 +11,7 @@ import Image from "react-native-image-progress";
 import ProgressBar from "react-native-progress/Bar";
 import y_string_util from 'src/util/y_string_util';
 import y_icon_util from 'src/util/y_icon_util';
+import y_image_picker_util from "src/util/y_image_picker_util";
 const styles = StyleSheet.create({
     container : {
         flex : 1,
@@ -57,6 +58,50 @@ class ImageScreen extends PureComponent {
                     ImageScreen
                 </Text>
                 <ScrollView>
+
+
+                    <Text style={styles.welcome}
+                          onPress={()=>{
+                              y_image_picker_util.openCamera();
+                          }}
+                    >
+                        openCamera
+                    </Text>
+                    <Text style={styles.welcome}
+                          onPress={()=>{
+                              y_image_picker_util.openCropper();
+                          }}
+                    >
+                        openCropper
+                    </Text>
+                    <Text style={styles.welcome}
+                          onPress={()=>{
+                              y_image_picker_util.openPicker();
+                          }}
+                    >
+                        openPicker
+                    </Text>
+                    <Text style={styles.welcome}
+                          onPress={()=>{
+                              y_image_picker_util.selectVideoTapped();
+                          }}
+                    >
+                        selectVideoTapped
+                    </Text>
+                    <Text style={styles.welcome}
+                          onPress={()=>{
+                              y_image_picker_util.openPickerCropping();
+                          }}
+                    >
+                        openPickerCropping
+                    </Text>
+                    <Text style={styles.welcome}
+                          onPress={()=>{
+                              y_image_picker_util.openPickerMultiple();
+                          }}
+                    >
+                        openPickerMultiple
+                    </Text>
 
                     {y_icon_util.getIcon(img_url,{width:30,height:30,backgroundColor:'red'},y_icon_util.TYPE_ICON.IMG_NET)}
                     {y_icon_util.getIcon(require('src/assets/image/test.jpg'),{width:30,height:30},y_icon_util.TYPE_ICON.IMG_LOCAL)}

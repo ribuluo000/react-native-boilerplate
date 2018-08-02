@@ -27,5 +27,8 @@ export default {
     filter : '筛选',
     no_data : '无数据',
 
+    open_camera : '打开相机',
+    open_album : '打开相册',
+
 
 };
