@@ -12,6 +12,7 @@ import DeviceInfoButton from "./main/DeviceInfoButton";
 import ScanButton from "./main/ScanButton";
 import SimpleButton from "./main/SimpleButton";
 import ShowWebViewButton from "./main/ShowWebViewButton";
+import TabButton from "./main/TabButton";
 
 const styles = StyleSheet.create({
     container : {
@@ -39,6 +40,7 @@ const MainScreen = () => (
             <ImageButton />
             <DeviceInfoButton />
             <ShowWebViewButton />
+            <TabButton />
 
 
 

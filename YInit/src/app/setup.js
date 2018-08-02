@@ -63,7 +63,7 @@ export default class setup extends BaseComponent {
                                             setTimeout(() => {
                                                 this.state.set_init_data_success();
                                                 y_view_util.dismiss_toast_loading();
-                                            }, 2000);
+                                            }, 200);
 
                                         }
                                     });

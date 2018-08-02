@@ -49,6 +49,7 @@ function reducer_nav(state = initialNavState, action) {
         case TYPE_ACTION.DeviceInfoScreen:
         case TYPE_ACTION.ScanScreen:
         case TYPE_ACTION.SimpleScreen:
+        case TYPE_ACTION.TabScreen:
         case TYPE_ACTION.CounterContainer:
             nextState = RootNavigator.router.getStateForAction(
                 NavigationActions.navigate({ routeName : routeName }),

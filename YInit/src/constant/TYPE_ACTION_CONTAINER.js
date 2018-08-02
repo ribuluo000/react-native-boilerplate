@@ -22,6 +22,7 @@ export default {
     "DeviceInfoScreen" : "DeviceInfoScreen",
     "ScanScreen" : "ScanScreen",
     "SimpleScreen" : "SimpleScreen",
+    "TabScreen" : "TabScreen",
     "CounterContainer" : "CounterContainer",
 
 };

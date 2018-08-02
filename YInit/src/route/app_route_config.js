@@ -8,6 +8,7 @@ import ImageScreen from 'demo/component/ImageScreen';
 import DeviceInfoScreen from 'demo/component/DeviceInfoScreen';
 import ScanScreen from 'demo/component/ScanScreen';
 import SimpleScreen from 'demo/component/SimpleScreen';
+import TabScreen from 'demo/component/TabScreen';
 import CounterContainer from 'demo/container/counter/CounterContainer';
 
 
@@ -31,4 +32,5 @@ export default {
     DeviceInfoScreen: { screen: DeviceInfoScreen },
     ScanScreen: { screen: ScanScreen },
     SimpleScreen: { screen: SimpleScreen },
+    TabScreen: { screen: TabScreen },
 }
