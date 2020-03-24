@@ -163,6 +163,33 @@ if(!global._babelPolyfill) { require('babel-polyfill'); }
 ```
 
 
+
+
+### ios react-native-camera build error! （可能是。。。link 后 yarm 可以build成功，npm i 不可以build成功），报错信息如下：
+
+```
+Undefined symbols for architecture x86_64:
+  "_OBJC_CLASS_$_RNSensorOrientationChecker", referenced from:
+      objc-class-ref in libRNCamera.a(RNCamera.o)
+ld: symbol(s) not found for architecture x86_64
+
+```
+
+解决方案：
+react-native unlink react-native-camera
+
+Add the plugin dependency to your Podfile, pointing at the path where NPM installed it:
+pod 'react-native-camera', path: '../node_modules/react-native-camera'
+
+pod install
+
+```
+
+
+```
+
+
+
 ### Redux DevTools Integration
 
 
